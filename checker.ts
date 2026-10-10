@@ -23,7 +23,8 @@ export type Verdict = {
   notes: string[];
 };
 
-const rate = (s: Stat) => s.too_few ? `${s.alive} of ${s.n} (too few to say)` : `${s.alive_pct}% of ${s.n}`;
+const n = (x: number) => x.toLocaleString("en-US");
+const rate = (s: Stat) => s.too_few ? `${s.alive} of ${n(s.n)} (too few to say)` : `${n(s.alive)} of ${n(s.n)} (${s.alive_pct}%)`;
 
 /** Verdict for a decoded on-chain PoolConfig or SDK ConfigParameters. */
 export function checkConfig(config: any, ev: Evidence, quoteMint?: string): Verdict {
