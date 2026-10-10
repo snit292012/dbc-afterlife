@@ -37,6 +37,7 @@
     "collectFeeMode": 0,
     "migrationOption": 1,
     "activationType": 1,
+    "tokenType": 0,
     "tokenDecimal": 6,
     "partnerLiquidityPercentage": 0,
     "partnerPermanentLockedLiquidityPercentage": 50,

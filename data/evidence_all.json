@@ -26,8 +26,8 @@
         11
       ],
       "median_holders": 146,
-      "median_mcap_usd": 1,
-      "partners": 272
+      "partners": 272,
+      "top_partner_launches": 57
     }
   },
   "evidence": [
@@ -45,8 +45,8 @@
             11
           ],
           "median_holders": 146,
-          "median_mcap_usd": 1,
           "partners": 272,
+          "top_partner_launches": 57,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -80,8 +80,8 @@
             58
           ],
           "median_holders": 130,
-          "median_mcap_usd": 2067,
           "partners": 490,
+          "top_partner_launches": 5,
           "examples": [
             {
               "name": "TOR-SOL",
@@ -115,8 +115,8 @@
             21
           ],
           "median_holders": 110,
-          "median_mcap_usd": 7383,
           "partners": 147,
+          "top_partner_launches": 158,
           "examples": [
             {
               "name": "DUNE-SOL",
@@ -150,8 +150,8 @@
             59
           ],
           "median_holders": 109,
-          "median_mcap_usd": 0,
           "partners": 1,
+          "top_partner_launches": 54,
           "examples": [
             {
               "name": "NVDA-SOL",
@@ -185,8 +185,8 @@
             50
           ],
           "median_holders": 195,
-          "median_mcap_usd": 4065,
           "partners": 1,
+          "top_partner_launches": 52,
           "examples": [
             {
               "name": "inkcoin-SOL",
@@ -220,8 +220,8 @@
             51
           ],
           "median_holders": 127,
-          "median_mcap_usd": 3764,
           "partners": 1,
+          "top_partner_launches": 49,
           "examples": [
             {
               "name": "XP-SOL",
@@ -255,8 +255,8 @@
             30
           ],
           "median_holders": 170,
-          "median_mcap_usd": 1570,
           "partners": 1,
+          "top_partner_launches": 30,
           "examples": [
             {
               "name": "GUM-SOL",
@@ -290,8 +290,8 @@
             51
           ],
           "median_holders": 79,
-          "median_mcap_usd": 2279,
           "partners": 1,
+          "top_partner_launches": 28,
           "examples": [
             {
               "name": "Satoshi-SOL",
@@ -325,8 +325,8 @@
             65
           ],
           "median_holders": 188,
-          "median_mcap_usd": 2744,
           "partners": 1,
+          "top_partner_launches": 24,
           "examples": [
             {
               "name": "ソラナ-SOL",
@@ -914,8 +914,8 @@
             17
           ],
           "median_holders": 115,
-          "median_mcap_usd": 2,
           "partners": 149,
+          "top_partner_launches": 30,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -949,8 +949,8 @@
             2
           ],
           "median_holders": 150,
-          "median_mcap_usd": 1,
           "partners": 49,
+          "top_partner_launches": 45,
           "examples": [
             {
               "name": "SPG107-SOL",
@@ -972,8 +972,8 @@
             10
           ],
           "median_holders": 157,
-          "median_mcap_usd": 1,
           "partners": 41,
+          "top_partner_launches": 12,
           "examples": [
             {
               "name": "NYME-SOL",
@@ -1007,8 +1007,8 @@
             27
           ],
           "median_holders": 204,
-          "median_mcap_usd": 4595,
           "partners": 60,
+          "top_partner_launches": 15,
           "examples": [
             {
               "name": "META-SOL",
@@ -1048,8 +1048,8 @@
             2
           ],
           "median_holders": 155,
-          "median_mcap_usd": 1,
           "partners": 97,
+          "top_partner_launches": 57,
           "examples": [
             {
               "name": "COIL-SOL",
@@ -1079,8 +1079,8 @@
             28
           ],
           "median_holders": 94,
-          "median_mcap_usd": 2078,
           "partners": 127,
+          "top_partner_launches": 15,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -1114,8 +1114,8 @@
             24
           ],
           "median_holders": 125,
-          "median_mcap_usd": 0,
           "partners": 53,
+          "top_partner_launches": 9,
           "examples": [
             {
               "name": "CLAWB-SOL",
@@ -1155,8 +1155,8 @@
             9
           ],
           "median_holders": 142,
-          "median_mcap_usd": 1,
           "partners": 220,
+          "top_partner_launches": 57,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -1190,8 +1190,8 @@
             29
           ],
           "median_holders": 196,
-          "median_mcap_usd": 3166,
           "partners": 57,
+          "top_partner_launches": 14,
           "examples": [
             {
               "name": "LIB-SOL",
@@ -1231,8 +1231,8 @@
             14
           ],
           "median_holders": 159,
-          "median_mcap_usd": 1,
           "partners": 192,
+          "top_partner_launches": 57,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -1266,8 +1266,8 @@
             4
           ],
           "median_holders": 54,
-          "median_mcap_usd": 0,
           "partners": 81,
+          "top_partner_launches": 12,
           "examples": [
             {
               "name": "SPARKY-SOL",
@@ -1297,8 +1297,8 @@
         40
       ],
       "median_holders": 132,
-      "median_mcap_usd": 1969,
       "partners": 59,
+      "top_partner_launches": 6,
       "alive_examples": [
         {
           "name": "Myla-SOL",
@@ -1412,8 +1412,8 @@
         42
       ],
       "median_holders": 92,
-      "median_mcap_usd": 2262,
       "partners": 20,
+      "top_partner_launches": 8,
       "alive_examples": [
         {
           "name": "LIB-SOL",
@@ -1462,8 +1462,8 @@
         2
       ],
       "median_holders": 155,
-      "median_mcap_usd": 1,
-      "partners": 97
+      "partners": 97,
+      "top_partner_launches": 57
     },
     {
       "id": "low-threshold",
@@ -1476,8 +1476,8 @@
         2
       ],
       "median_holders": 150,
-      "median_mcap_usd": 1,
-      "partners": 49
+      "partners": 49,
+      "top_partner_launches": 45
     },
     {
       "id": "nothing-locked",
@@ -1490,8 +1490,8 @@
         4
       ],
       "median_holders": 54,
-      "median_mcap_usd": 0,
-      "partners": 81
+      "partners": 81,
+      "top_partner_launches": 12
     },
     {
       "id": "avoid",
@@ -1504,8 +1504,85 @@
         2
       ],
       "median_holders": 147,
-      "median_mcap_usd": 1,
-      "partners": 123
+      "partners": 123,
+      "top_partner_launches": 57
+    }
+  ],
+  "robustness": [
+    {
+      "tvl_usd": 500,
+      "baseline": {
+        "n": 718,
+        "alive": 73,
+        "alive_pct": 10
+      },
+      "presets": {
+        "steady": {
+          "n": 85,
+          "alive": 31,
+          "alive_pct": 36
+        },
+        "anti-sniper": {
+          "n": 32,
+          "alive": 8,
+          "alive_pct": 25
+        }
+      },
+      "avoid": {
+        "n": 473,
+        "alive": 3,
+        "alive_pct": 1
+      }
+    },
+    {
+      "tvl_usd": 1000,
+      "baseline": {
+        "n": 718,
+        "alive": 64,
+        "alive_pct": 9
+      },
+      "presets": {
+        "steady": {
+          "n": 85,
+          "alive": 25,
+          "alive_pct": 29
+        },
+        "anti-sniper": {
+          "n": 32,
+          "alive": 8,
+          "alive_pct": 25
+        }
+      },
+      "avoid": {
+        "n": 473,
+        "alive": 3,
+        "alive_pct": 1
+      }
+    },
+    {
+      "tvl_usd": 5000,
+      "baseline": {
+        "n": 718,
+        "alive": 23,
+        "alive_pct": 3
+      },
+      "presets": {
+        "steady": {
+          "n": 85,
+          "alive": 4,
+          "alive_pct": 5
+        },
+        "anti-sniper": {
+          "n": 32,
+          "alive": 1,
+          "alive_pct": 3
+        }
+      },
+      "avoid": {
+        "n": 473,
+        "alive": 1,
+        "alive_pct": 0
+      }
     }
   ]
 }

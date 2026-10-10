@@ -3,68 +3,68 @@
 Snapshot 2026-10-09T23:28:25.307Z. 2500 sampled pools → 2084 traced to DBC (416 not DBC, 0 errors, 75 not migrated, 167 non-SOL quote) → 1842 graduated SOL-quoted → 859 spam excluded (47%) → 983 kept. Alive = TVL ≥ $1,000 at snapshot. Overall alive 27%; self-serve (met-dbc) 8% (5–11%) of 341. Graduates only; associations, not causes; ranges are 95% intervals.
 
 ## Launchpad (all kept launches (shows the confounder))
-| Setting | Launches | Alive (95% range) | Median holders | Median mcap |
-|---|---|---|---|---|
-| met-dbc | 341 | 8% (5–11%) | 139 | $1 |
-| bags.fun | 282 | 51% (46–57%) | 140 | $2,089 |
-| Believe | 177 | 18% (13–24%) | 108 | $6,856 |
-| daos.fun | 26 | 54% (35–71%) | 121 | $0 |
-| dubdub | 24 | 29% (15–49%) | 205 | $4,009 |
-| printr | 23 | 22% (10–42%) | 173 | $4,372 |
-| jup-studio | 18 | too few to say (2/18) | | |
-| revshare | 14 | too few to say (4/14) | | |
-| trends.fun | 14 | too few to say (5/14) | | |
-| cyreneai | 7 | too few to say (3/7) | | |
-| easya-kickstart | 7 | too few to say (1/7) | | |
-| swarms.world | 6 | too few to say (4/6) | | |
-| forge | 6 | too few to say (2/6) | | |
-| bunt.fun | 5 | too few to say (2/5) | | |
-| slerfpad | 4 | too few to say (1/4) | | |
-| play.fun | 3 | too few to say (1/3) | | |
-| shout | 3 | too few to say (2/3) | | |
-| print.fun | 3 | too few to say (1/3) | | |
-| cults.fun | 2 | too few to say (0/2) | | |
-| sendshot | 2 | too few to say (0/2) | | |
-| candle | 2 | too few to say (1/2) | | |
-| cooking.city | 2 | too few to say (1/2) | | |
-| neuko.ai | 2 | too few to say (2/2) | | |
-| collaterize | 1 | too few to say (0/1) | | |
-| oneshot.meme | 1 | too few to say (1/1) | | |
-| buff.trade | 1 | too few to say (0/1) | | |
-| dealr.fun | 1 | too few to say (0/1) | | |
-| zcombinator | 1 | too few to say (0/1) | | |
-| every | 1 | too few to say (0/1) | | |
-| purps | 1 | too few to say (1/1) | | |
-| opengameprotocol | 1 | too few to say (0/1) | | |
-| bitdealer | 1 | too few to say (0/1) | | |
-| coined.wtf | 1 | too few to say (0/1) | | |
+| Setting | Launches | Alive (95% range) | Median holders |
+|---|---|---|---|
+| met-dbc | 341 | 8% (5–11%) | 139 |
+| bags.fun | 282 | 51% (46–57%) | 140 |
+| Believe | 177 | 18% (13–24%) | 108 |
+| daos.fun | 26 | 54% (35–71%) | 121 |
+| dubdub | 24 | 29% (15–49%) | 205 |
+| printr | 23 | 22% (10–42%) | 173 |
+| jup-studio | 18 | too few to say (2/18) | |
+| revshare | 14 | too few to say (4/14) | |
+| trends.fun | 14 | too few to say (5/14) | |
+| cyreneai | 7 | too few to say (3/7) | |
+| easya-kickstart | 7 | too few to say (1/7) | |
+| swarms.world | 6 | too few to say (4/6) | |
+| forge | 6 | too few to say (2/6) | |
+| bunt.fun | 5 | too few to say (2/5) | |
+| slerfpad | 4 | too few to say (1/4) | |
+| play.fun | 3 | too few to say (1/3) | |
+| shout | 3 | too few to say (2/3) | |
+| print.fun | 3 | too few to say (1/3) | |
+| cults.fun | 2 | too few to say (0/2) | |
+| sendshot | 2 | too few to say (0/2) | |
+| candle | 2 | too few to say (1/2) | |
+| cooking.city | 2 | too few to say (1/2) | |
+| neuko.ai | 2 | too few to say (2/2) | |
+| collaterize | 1 | too few to say (0/1) | |
+| oneshot.meme | 1 | too few to say (1/1) | |
+| buff.trade | 1 | too few to say (0/1) | |
+| dealr.fun | 1 | too few to say (0/1) | |
+| zcombinator | 1 | too few to say (0/1) | |
+| every | 1 | too few to say (0/1) | |
+| purps | 1 | too few to say (1/1) | |
+| opengameprotocol | 1 | too few to say (0/1) | |
+| bitdealer | 1 | too few to say (0/1) | |
+| coined.wtf | 1 | too few to say (0/1) | |
 
 ## Graduation threshold (within met-dbc)
-| Setting | Launches | Alive (95% range) | Median holders | Median mcap |
-|---|---|---|---|---|
-| 60–100 SOL | 147 | 12% (8–19%) | 122 | $2 |
-| <20 SOL | 83 | 0% (0–4%) | 154 | $0 |
-| 20–60 SOL | 62 | 5% (2–13%) | 136 | $1 |
-| ≥100 SOL | 49 | 12% (6–24%) | 143 | $2,425 |
+| Setting | Launches | Alive (95% range) | Median holders |
+|---|---|---|---|
+| 60–100 SOL | 147 | 12% (8–19%) | 122 |
+| <20 SOL | 83 | 0% (0–4%) | 154 |
+| 20–60 SOL | 62 | 5% (2–13%) | 136 |
+| ≥100 SOL | 49 | 12% (6–24%) | 143 |
 
 ## Starting fee (within met-dbc)
-| Setting | Launches | Alive (95% range) | Median holders | Median mcap |
-|---|---|---|---|---|
-| ≤0.25% | 187 | 0% (0–2%) | 165 | $1 |
-| >1% | 109 | 18% (12–27%) | 86 | $1,629 |
-| 0.25–1% | 45 | 16% (8–29%) | 110 | $0 |
+| Setting | Launches | Alive (95% range) | Median holders |
+|---|---|---|---|
+| ≤0.25% | 187 | 0% (0–2%) | 165 |
+| >1% | 109 | 18% (12–27%) | 86 |
+| 0.25–1% | 45 | 16% (8–29%) | 110 |
 
 ## Fee decay (within met-dbc)
-| Setting | Launches | Alive (95% range) | Median holders | Median mcap |
-|---|---|---|---|---|
-| flat | 289 | 6% (3–9%) | 142 | $1 |
-| decaying | 52 | 21% (12–34%) | 126 | $2,192 |
+| Setting | Launches | Alive (95% range) | Median holders |
+|---|---|---|---|
+| flat | 289 | 6% (3–9%) | 142 |
+| decaying | 52 | 21% (12–34%) | 126 |
 
 ## Locked LP after graduation (within met-dbc)
-| Setting | Launches | Alive (95% range) | Median holders | Median mcap |
-|---|---|---|---|---|
-| some locked | 270 | 10% (7–14%) | 169 | $2 |
-| none locked | 71 | 0% (0–5%) | 54 | $0 |
+| Setting | Launches | Alive (95% range) | Median holders |
+|---|---|---|---|
+| some locked | 270 | 10% (7–14%) | 169 |
+| none locked | 71 | 0% (0–5%) | 54 |
 
 ## Presets (within met-dbc; every matching launch, alive or dead)
 | Preset | Launches | Alive (95% range) | Distinct partners |
@@ -79,3 +79,10 @@ Snapshot 2026-10-09T23:28:25.307Z. 2500 sampled pools → 2084 traced to DBC (41
 | Graduates at under 20 SOL | 83 | 0% (0–4%) | 33 |
 | No liquidity is permanently locked after graduation | 71 | 0% (0–5%) | 50 |
 | Any of the warning signs | 225 | 0% (0–2%) | 77 |
+
+## Robustness: other definitions of "alive" (within met-dbc)
+| Alive if TVL ≥ | Baseline | steady | anti-sniper | Any warning sign |
+|---|---|---|---|---|
+| $500 | 10% (34/341) | 40% (17/42) | 28% (7/25) | 0% (0/225) |
+| $1,000 | 8% (27/341) | 29% (12/42) | 28% (7/25) | 0% (0/225) |
+| $5,000 | 1% (4/341) | 2% (1/42) | 0% (0/25) | 0% (0/225) |

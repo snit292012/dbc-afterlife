@@ -1,0 +1,31 @@
+{
+  "preset": "anti-sniper",
+  "payer": "9hvivr355Wn4QeNtSXW4ypWvuc2HxzucVysdoke2cJpQ",
+  "steps": {
+    "config": {
+      "address": "CWNUZUopcixB5NqHPEnkv3f97Rb9ZLpq5ZUDi6SX6369",
+      "sig": "4A4cNkYQCMk9tLuC58DP1FbvidBvBTcmisc8qHkJaBwZTsJYhCMEoRyNju29yjxWzQdqmWapQY5zbhtzkv69i4Ho",
+      "tx": "https://explorer.solana.com/tx/4A4cNkYQCMk9tLuC58DP1FbvidBvBTcmisc8qHkJaBwZTsJYhCMEoRyNju29yjxWzQdqmWapQY5zbhtzkv69i4Ho?cluster=devnet",
+      "account": "https://explorer.solana.com/address/CWNUZUopcixB5NqHPEnkv3f97Rb9ZLpq5ZUDi6SX6369?cluster=devnet"
+    },
+    "pool": {
+      "pool": "G4hZpNerDj2DB476UaFt4ZaXaSgLVTH8Qgk1fWkcRsHk",
+      "mint": "6UHDfW3Zggf9qq39zj4jPs4MbPxKukNfheCscCJZyCJG",
+      "sig": "3cqbs3tg1EnSdz2ydCSYfrq3QhZjpLHxt2xPjMDquiyHhxrEKxgzuvgRaK4xoWQDxvfVpQVEXkH5G8asZP2c3RJr",
+      "tx": "https://explorer.solana.com/tx/3cqbs3tg1EnSdz2ydCSYfrq3QhZjpLHxt2xPjMDquiyHhxrEKxgzuvgRaK4xoWQDxvfVpQVEXkH5G8asZP2c3RJr?cluster=devnet",
+      "account": "https://explorer.solana.com/address/G4hZpNerDj2DB476UaFt4ZaXaSgLVTH8Qgk1fWkcRsHk?cluster=devnet"
+    },
+    "buy": {
+      "amount_sol": 0.05,
+      "sig": "rGfUmgvENXyoPhwDeWY13WCkrhpzSiCvzDy8sjCZn99ZNCrGACNnqzKb4eWgm4f5CSAJLPw4T7j5bkGLuGWveXD",
+      "tx": "https://explorer.solana.com/tx/rGfUmgvENXyoPhwDeWY13WCkrhpzSiCvzDy8sjCZn99ZNCrGACNnqzKb4eWgm4f5CSAJLPw4T7j5bkGLuGWveXD?cluster=devnet"
+    }
+  },
+  "readback": {
+    "migrationQuoteThreshold": "85000000000",
+    "expected": "85000000000",
+    "cliffFeeNumerator": "500000000",
+    "expectedFee": "500000000",
+    "match": true
+  }
+}

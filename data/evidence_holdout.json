@@ -25,8 +25,8 @@
         13
       ],
       "median_holders": 149,
-      "median_mcap_usd": 1,
-      "partners": 177
+      "partners": 177,
+      "top_partner_launches": 27
     }
   },
   "evidence": [
@@ -44,8 +44,8 @@
             13
           ],
           "median_holders": 149,
-          "median_mcap_usd": 1,
           "partners": 177,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -79,8 +79,8 @@
             62
           ],
           "median_holders": 120,
-          "median_mcap_usd": 2059,
           "partners": 262,
+          "top_partner_launches": 3,
           "examples": [
             {
               "name": "BTH-SOL",
@@ -114,8 +114,8 @@
             21
           ],
           "median_holders": 111,
-          "median_mcap_usd": 7558,
           "partners": 76,
+          "top_partner_launches": 66,
           "examples": [
             {
               "name": "SAIDAR-SOL",
@@ -149,8 +149,8 @@
             66
           ],
           "median_holders": 216,
-          "median_mcap_usd": 3704,
           "partners": 1,
+          "top_partner_launches": 29,
           "examples": [
             {
               "name": "NOOB-SOL",
@@ -184,8 +184,8 @@
             58
           ],
           "median_holders": 100,
-          "median_mcap_usd": 0,
           "partners": 1,
+          "top_partner_launches": 28,
           "examples": [
             {
               "name": "JOI-SOL",
@@ -219,8 +219,8 @@
             63
           ],
           "median_holders": 87,
-          "median_mcap_usd": 3729,
           "partners": 1,
+          "top_partner_launches": 25,
           "examples": [
             {
               "name": "SPACESHIBA-SOL",
@@ -736,8 +736,8 @@
             19
           ],
           "median_holders": 114,
-          "median_mcap_usd": 1,
           "partners": 102,
+          "top_partner_launches": 13,
           "examples": [
             {
               "name": "THIRSTCOIN-SOL",
@@ -771,8 +771,8 @@
             4
           ],
           "median_holders": 150,
-          "median_mcap_usd": 1,
           "partners": 31,
+          "top_partner_launches": 21,
           "examples": [
             {
               "name": "XPD-SOL",
@@ -794,8 +794,8 @@
             13
           ],
           "median_holders": 159,
-          "median_mcap_usd": 1,
           "partners": 29,
+          "top_partner_launches": 6,
           "examples": [
             {
               "name": "KNEWIT-SOL",
@@ -829,8 +829,8 @@
             35
           ],
           "median_holders": 282,
-          "median_mcap_usd": 6424,
           "partners": 35,
+          "top_partner_launches": 12,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -870,8 +870,8 @@
             3
           ],
           "median_holders": 154,
-          "median_mcap_usd": 1,
           "partners": 62,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "COIL-SOL",
@@ -901,8 +901,8 @@
             33
           ],
           "median_holders": 112,
-          "median_mcap_usd": 2543,
           "partners": 83,
+          "top_partner_launches": 12,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -936,8 +936,8 @@
             29
           ],
           "median_holders": 165,
-          "median_mcap_usd": 117,
           "partners": 34,
+          "top_partner_launches": 4,
           "examples": [
             {
               "name": "THIRSTCOIN-SOL",
@@ -977,8 +977,8 @@
             12
           ],
           "median_holders": 142,
-          "median_mcap_usd": 1,
           "partners": 146,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "THIRSTCOIN-SOL",
@@ -1012,8 +1012,8 @@
             32
           ],
           "median_holders": 464,
-          "median_mcap_usd": 5372,
           "partners": 34,
+          "top_partner_launches": 11,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -1053,8 +1053,8 @@
             15
           ],
           "median_holders": 157,
-          "median_mcap_usd": 1,
           "partners": 130,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -1088,8 +1088,8 @@
             9
           ],
           "median_holders": 55,
-          "median_mcap_usd": 0,
           "partners": 47,
+          "top_partner_launches": 5,
           "examples": [
             {
               "name": "SPARKY-SOL",
@@ -1119,8 +1119,8 @@
         45
       ],
       "median_holders": 154,
-      "median_mcap_usd": 2355,
       "partners": 39,
+      "top_partner_launches": 3,
       "alive_examples": [
         {
           "name": "THIRSTCOIN-SOL",
@@ -1201,8 +1201,8 @@
         3
       ],
       "median_holders": 154,
-      "median_mcap_usd": 1,
-      "partners": 62
+      "partners": 62,
+      "top_partner_launches": 27
     },
     {
       "id": "low-threshold",
@@ -1215,8 +1215,8 @@
         4
       ],
       "median_holders": 150,
-      "median_mcap_usd": 1,
-      "partners": 31
+      "partners": 31,
+      "top_partner_launches": 21
     },
     {
       "id": "nothing-locked",
@@ -1229,8 +1229,8 @@
         9
       ],
       "median_holders": 55,
-      "median_mcap_usd": 0,
-      "partners": 47
+      "partners": 47,
+      "top_partner_launches": 5
     },
     {
       "id": "avoid",
@@ -1243,8 +1243,85 @@
         3
       ],
       "median_holders": 146,
-      "median_mcap_usd": 1,
-      "partners": 80
+      "partners": 80,
+      "top_partner_launches": 27
+    }
+  ],
+  "robustness": [
+    {
+      "tvl_usd": 500,
+      "baseline": {
+        "n": 377,
+        "alive": 39,
+        "alive_pct": 10
+      },
+      "presets": {
+        "steady": {
+          "n": 43,
+          "alive": 14,
+          "alive_pct": 33
+        },
+        "anti-sniper": {
+          "n": 7,
+          "alive": 1,
+          "alive_pct": 14
+        }
+      },
+      "avoid": {
+        "n": 248,
+        "alive": 3,
+        "alive_pct": 1
+      }
+    },
+    {
+      "tvl_usd": 1000,
+      "baseline": {
+        "n": 377,
+        "alive": 37,
+        "alive_pct": 10
+      },
+      "presets": {
+        "steady": {
+          "n": 43,
+          "alive": 13,
+          "alive_pct": 30
+        },
+        "anti-sniper": {
+          "n": 7,
+          "alive": 1,
+          "alive_pct": 14
+        }
+      },
+      "avoid": {
+        "n": 248,
+        "alive": 3,
+        "alive_pct": 1
+      }
+    },
+    {
+      "tvl_usd": 5000,
+      "baseline": {
+        "n": 377,
+        "alive": 19,
+        "alive_pct": 5
+      },
+      "presets": {
+        "steady": {
+          "n": 43,
+          "alive": 3,
+          "alive_pct": 7
+        },
+        "anti-sniper": {
+          "n": 7,
+          "alive": 1,
+          "alive_pct": 14
+        }
+      },
+      "avoid": {
+        "n": 248,
+        "alive": 1,
+        "alive_pct": 0
+      }
     }
   ]
 }

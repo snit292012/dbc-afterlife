@@ -10,22 +10,23 @@
     "not_dbc": 416,
     "errors": 0,
     "not_migrated": 75,
-    "graduated": 2009,
-    "spam": 866,
-    "spam_pct": 43,
-    "kept": 1143,
-    "alive_pct_all": 23,
+    "non_sol_quote": 167,
+    "graduated": 1842,
+    "spam": 859,
+    "spam_pct": 47,
+    "kept": 983,
+    "alive_pct_all": 27,
     "self_serve": {
-      "n": 370,
+      "n": 341,
       "alive": 27,
-      "alive_pct": 7,
+      "alive_pct": 8,
       "alive_ci95": [
         5,
-        10
+        11
       ],
-      "median_holders": 130,
-      "median_mcap_usd": 1,
-      "partners": 166
+      "median_holders": 139,
+      "partners": 156,
+      "top_partner_launches": 30
     }
   },
   "evidence": [
@@ -35,16 +36,16 @@
       "groups": [
         {
           "value": "met-dbc",
-          "n": 370,
+          "n": 341,
           "alive": 27,
-          "alive_pct": 7,
+          "alive_pct": 8,
           "alive_ci95": [
             5,
-            10
+            11
           ],
-          "median_holders": 130,
-          "median_mcap_usd": 1,
-          "partners": 166,
+          "median_holders": 139,
+          "partners": 156,
+          "top_partner_launches": 30,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -59,12 +60,12 @@
               "damm_pool": "B7mM4YXGdBQJzyARmfLZjJQ1fUZ5WCeFMvFhsswUdbjJ"
             },
             {
-              "name": "ANTFUNLIFE-SOL",
-              "damm_pool": "8njyRdvpEq3TAWvxsozgj4DgHwwYqtcCi9nNtaqL3cNE"
-            },
-            {
               "name": "SPG107-SOL",
               "damm_pool": "LSL5qMRdnWFb4MQKS9J2e4BQL6GJ3bY1p6u4tAZr6La"
+            },
+            {
+              "name": "OSOR-SOL",
+              "damm_pool": "gENUS139Q7RxWnWSgwqEkmyeZBCqtCAFjuDyH4RLHnk"
             }
           ]
         },
@@ -78,8 +79,8 @@
             57
           ],
           "median_holders": 140,
-          "median_mcap_usd": 2089,
           "partners": 258,
+          "top_partner_launches": 3,
           "examples": [
             {
               "name": "TOR-SOL",
@@ -113,8 +114,8 @@
             24
           ],
           "median_holders": 108,
-          "median_mcap_usd": 6856,
           "partners": 81,
+          "top_partner_launches": 92,
           "examples": [
             {
               "name": "DUNE-SOL",
@@ -139,37 +140,6 @@
           ]
         },
         {
-          "value": "jup-studio",
-          "n": 108,
-          "alive": 2,
-          "alive_pct": 2,
-          "alive_ci95": [
-            1,
-            7
-          ],
-          "median_holders": 307,
-          "median_mcap_usd": 3358,
-          "partners": 1,
-          "examples": [
-            {
-              "name": "GUM-SOL",
-              "damm_pool": "Hb283nxvaaMwjQbUT8XHcgn1syqkGM616xfatfA16Yav"
-            },
-            {
-              "name": "CT-SOL",
-              "damm_pool": "BB6wXuzvGy8Ucq1P53VE6x9cbBYDb1VE7ESKvZWtZ2nR"
-            },
-            {
-              "name": "$PIE-SOL",
-              "damm_pool": "3RugX8V3JKPc8xoKcscgCKvjbWKGiYJBa6DvrHRvxRNB"
-            },
-            {
-              "name": "Space-SOL",
-              "damm_pool": "86QsBBtAL8L5KQJFL43pErQNiiXYX3xvAS1nQe1j35RF"
-            }
-          ]
-        },
-        {
           "value": "daos.fun",
           "n": 26,
           "alive": 14,
@@ -179,8 +149,8 @@
             71
           ],
           "median_holders": 121,
-          "median_mcap_usd": 0,
           "partners": 1,
+          "top_partner_launches": 26,
           "examples": [
             {
               "name": "NVDA-SOL",
@@ -214,8 +184,8 @@
             49
           ],
           "median_holders": 205,
-          "median_mcap_usd": 4009,
           "partners": 1,
+          "top_partner_launches": 24,
           "examples": [
             {
               "name": "XP-SOL",
@@ -249,8 +219,8 @@
             42
           ],
           "median_holders": 173,
-          "median_mcap_usd": 4372,
           "partners": 1,
+          "top_partner_launches": 23,
           "examples": [
             {
               "name": "inkcoin-SOL",
@@ -271,6 +241,30 @@
             {
               "name": "BRRR-SOL",
               "damm_pool": "7wbMKdYwvcrTxZDtm1tcKCGw5JkvKd8i3xb4uXV1z5qc"
+            }
+          ]
+        },
+        {
+          "value": "jup-studio",
+          "n": 18,
+          "alive": 2,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "GUM-SOL",
+              "damm_pool": "Hb283nxvaaMwjQbUT8XHcgn1syqkGM616xfatfA16Yav"
+            },
+            {
+              "name": "CT-SOL",
+              "damm_pool": "BB6wXuzvGy8Ucq1P53VE6x9cbBYDb1VE7ESKvZWtZ2nR"
+            },
+            {
+              "name": "CT-SOL",
+              "damm_pool": "ApoKwkSh5UvoG4hzyvSpYASrbEKjYEgHEroEBVRrJoMr"
+            },
+            {
+              "name": "BAM-SOL",
+              "damm_pool": "8mrnT7DAzrdPdmBnwxDhKqB59iurQ85YH28ATo647XEZ"
             }
           ]
         },
@@ -327,22 +321,6 @@
             {
               "name": "trend is good-SOL",
               "damm_pool": "7aBhxaz1L43CBJWFboHbeT5Y1ntyhXE6QRwcoGU3AViS"
-            }
-          ]
-        },
-        {
-          "value": "moonshot",
-          "n": 13,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "CRAZY-SOL",
-              "damm_pool": "GKNQfxhfXu267uAexFzTdTWXP9V7S1tuRsUZDqqzNVnp"
-            },
-            {
-              "name": "ISO-SOL",
-              "damm_pool": "BJvF8WstQJd6aAbB3voMsCudkzjUruWveiQjeaFR9Ffw"
             }
           ]
         },
@@ -447,38 +425,6 @@
           ]
         },
         {
-          "value": "orynth",
-          "n": 6,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "SLOPE-SOL",
-              "damm_pool": "GXMD3t7iP6TdvXRDJr8S3hJ6R3zKo6uNkZcMLGy9K8qM"
-            },
-            {
-              "name": "HASHROCK-SOL",
-              "damm_pool": "92PtKxRb9QsRtx7DGicSfAV5LuT1ggQfS7ZaL392tcLB"
-            }
-          ]
-        },
-        {
-          "value": "eitherway",
-          "n": 5,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "SPARQ-SOL",
-              "damm_pool": "87ymKFjggPPV1qJARHpR3NvhpfJ2KFjxMHxEHu7KQmuS"
-            },
-            {
-              "name": "FUD-SOL",
-              "damm_pool": "6xj3jrCMXzDXu5vGtnG17WaDYm9qg4yq24JjJyMjBpdj"
-            }
-          ]
-        },
-        {
           "value": "bunt.fun",
           "n": 5,
           "alive": 2,
@@ -503,22 +449,6 @@
           ]
         },
         {
-          "value": "america.fun",
-          "n": 4,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "RIAL-SOL",
-              "damm_pool": "7BC8H9ReAEYcEWrfnHmL9hs8MhZTfL2pgJC8JKNceX5t"
-            },
-            {
-              "name": "DOW-SOL",
-              "damm_pool": "6oLXpkThcDP34qMz6pZASP5J9Ej2xV81Cj1pjvve9MEs"
-            }
-          ]
-        },
-        {
           "value": "slerfpad",
           "n": 4,
           "alive": 1,
@@ -535,22 +465,6 @@
             {
               "name": "Aura-SOL",
               "damm_pool": "iAkqNnF99M2p1TWeqDunArPiEKkd4QYCmLnYtL9JD76"
-            }
-          ]
-        },
-        {
-          "value": "time.fun",
-          "n": 4,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "shl0ms-SOL",
-              "damm_pool": "9GavdJoVzXgi1VmDQxXS2jebgE6QZxRJ2Gdu5RkhDZWN"
-            },
-            {
-              "name": "laurashin-SOL",
-              "damm_pool": "767sMRrAppwfMnxp7NVU4fbqaB4C6HWxKNsarB2irqTJ"
             }
           ]
         },
@@ -615,22 +529,6 @@
           ]
         },
         {
-          "value": "audius",
-          "n": 2,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "PHUTURES-SOL",
-              "damm_pool": "CQB8V5A8PEPTe2Cf7NAX4gTKpJpwpUVVLAJJUKqcSD6A"
-            },
-            {
-              "name": "R3LL-SOL",
-              "damm_pool": "5kATjXJKwkn1cjiv6gnk84sKqLwWpW2c5U8cHcZ8Fmnz"
-            }
-          ]
-        },
-        {
           "value": "cults.fun",
           "n": 2,
           "alive": 0,
@@ -679,22 +577,6 @@
           ]
         },
         {
-          "value": "soar",
-          "n": 2,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "MIXOOR-SOL",
-              "damm_pool": "DgnB9fvNfQUz83sGnC9qSd8kGdLdWDKouhcDmB39bqS3"
-            },
-            {
-              "name": "CPT-SOL",
-              "damm_pool": "3V68X91raXLgwCVUdTH3fwJ4VSSo2s3g3aeEP72wA9Up"
-            }
-          ]
-        },
-        {
           "value": "cooking.city",
           "n": 2,
           "alive": 1,
@@ -707,38 +589,6 @@
             {
               "name": "CHEF-SOL",
               "damm_pool": "F9L5PU9kVR2BrHze1ryVhPtSEeWAQFQhEGohZdVadhVk"
-            }
-          ]
-        },
-        {
-          "value": "purps",
-          "n": 2,
-          "alive": 1,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "PURPS-SOL",
-              "damm_pool": "zgLSYJkWC8yU9JvjFRXMD7MjzqY7SebmSAa3REsqaBF"
-            },
-            {
-              "name": "MEAT-SOL",
-              "damm_pool": "6iqvtkoWxzM5R6AkitLr6ZGgSFGC9xukpXRy5nLwbY7N"
-            }
-          ]
-        },
-        {
-          "value": "every",
-          "n": 2,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "EFROG-SOL",
-              "damm_pool": "8ADRYyRpfWiH1wz6aS65iNLaJW7ktuL9BKRYauLpKcXF"
-            },
-            {
-              "name": "PAMP-SOL",
-              "damm_pool": "DjSw8ezWs3NDv4E3ZgB9Rsa7UFWqFJviAyH86PDpueeW"
             }
           ]
         },
@@ -783,30 +633,6 @@
           ]
         },
         {
-          "value": "aicraft",
-          "n": 1,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "REV-SOL",
-              "damm_pool": "Xu6ZKBdxKvocSZssCEMNHUmmwzYwMVAYv9FCksbnyZa"
-            }
-          ]
-        },
-        {
-          "value": "peek.fun",
-          "n": 1,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "SUPERMODEL-SOL",
-              "damm_pool": "H6WPxmzzWAX9owJ6j29khfXXqdMmpfFyVvnaHVg6SsMe"
-            }
-          ]
-        },
-        {
           "value": "buff.trade",
           "n": 1,
           "alive": 0,
@@ -843,6 +669,30 @@
           ]
         },
         {
+          "value": "every",
+          "n": 1,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "EFROG-SOL",
+              "damm_pool": "8ADRYyRpfWiH1wz6aS65iNLaJW7ktuL9BKRYauLpKcXF"
+            }
+          ]
+        },
+        {
+          "value": "purps",
+          "n": 1,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "PURPS-SOL",
+              "damm_pool": "zgLSYJkWC8yU9JvjFRXMD7MjzqY7SebmSAa3REsqaBF"
+            }
+          ]
+        },
+        {
           "value": "opengameprotocol",
           "n": 1,
           "alive": 0,
@@ -863,18 +713,6 @@
             {
               "name": "$PLATY-SOL",
               "damm_pool": "D16wszmxjDG1ewMXEi5suvVrKpvMdPCy7QzHTRjzhQtW"
-            }
-          ]
-        },
-        {
-          "value": "ember",
-          "n": 1,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "MEAT-SOL",
-              "damm_pool": "6sGPQKismuokvikRLdThwTT6PWCYf4P4LX3AJ5yAKNrd"
             }
           ]
         },
@@ -906,8 +744,8 @@
             19
           ],
           "median_holders": 122,
-          "median_mcap_usd": 2,
           "partners": 76,
+          "top_partner_launches": 17,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -933,16 +771,16 @@
         },
         {
           "value": "<20 SOL",
-          "n": 91,
+          "n": 83,
           "alive": 0,
           "alive_pct": 0,
           "alive_ci95": [
             0,
             4
           ],
-          "median_holders": 148,
-          "median_mcap_usd": 1,
-          "partners": 37,
+          "median_holders": 154,
+          "partners": 33,
+          "top_partner_launches": 24,
           "examples": [
             {
               "name": "SPG107-SOL",
@@ -951,41 +789,6 @@
             {
               "name": "OSOR-SOL",
               "damm_pool": "gENUS139Q7RxWnWSgwqEkmyeZBCqtCAFjuDyH4RLHnk"
-            }
-          ]
-        },
-        {
-          "value": "≥100 SOL",
-          "n": 70,
-          "alive": 6,
-          "alive_pct": 9,
-          "alive_ci95": [
-            4,
-            17
-          ],
-          "median_holders": 128,
-          "median_mcap_usd": 1937,
-          "partners": 44,
-          "examples": [
-            {
-              "name": "META-SOL",
-              "damm_pool": "HyKHkypJ9AADMUbzDX2txsHAgyPnjPWEoxFTyRqRkW61"
-            },
-            {
-              "name": "SINGLECOIN-SOL",
-              "damm_pool": "B9SZhDZFt73djgZvFYyQUtciYw8ypjur187gfEw8EBtT"
-            },
-            {
-              "name": "Wenoom-SOL",
-              "damm_pool": "7eg8X3ECNQ2deo2xthsk4SbZqP5w2yCwQiFCYa3j62Bt"
-            },
-            {
-              "name": "ANTFUNLIFE-SOL",
-              "damm_pool": "8njyRdvpEq3TAWvxsozgj4DgHwwYqtcCi9nNtaqL3cNE"
-            },
-            {
-              "name": "PPO-SOL",
-              "damm_pool": "AzioVgiSRWL2FhceHPigMM5yFYgP6twqbqzCj4mgA6UE"
             }
           ]
         },
@@ -999,8 +802,8 @@
             13
           ],
           "median_holders": 136,
-          "median_mcap_usd": 1,
           "partners": 29,
+          "top_partner_launches": 7,
           "examples": [
             {
               "name": "NYME-SOL",
@@ -1023,6 +826,41 @@
               "damm_pool": "BbANnfeccd79gu7yWTKoE84uU5wF8E7zEoWZ8HNqRHE4"
             }
           ]
+        },
+        {
+          "value": "≥100 SOL",
+          "n": 49,
+          "alive": 6,
+          "alive_pct": 12,
+          "alive_ci95": [
+            6,
+            24
+          ],
+          "median_holders": 143,
+          "partners": 38,
+          "top_partner_launches": 3,
+          "examples": [
+            {
+              "name": "META-SOL",
+              "damm_pool": "HyKHkypJ9AADMUbzDX2txsHAgyPnjPWEoxFTyRqRkW61"
+            },
+            {
+              "name": "SINGLECOIN-SOL",
+              "damm_pool": "B9SZhDZFt73djgZvFYyQUtciYw8ypjur187gfEw8EBtT"
+            },
+            {
+              "name": "Wenoom-SOL",
+              "damm_pool": "7eg8X3ECNQ2deo2xthsk4SbZqP5w2yCwQiFCYa3j62Bt"
+            },
+            {
+              "name": "PPO-SOL",
+              "damm_pool": "AzioVgiSRWL2FhceHPigMM5yFYgP6twqbqzCj4mgA6UE"
+            },
+            {
+              "name": "eyes-SOL",
+              "damm_pool": "Gd3Vkgbzg8GN3F2WXtyZe62TMaJ7mZNnMENTN1HVSLR5"
+            }
+          ]
         }
       ]
     },
@@ -1040,8 +878,8 @@
             2
           ],
           "median_holders": 165,
-          "median_mcap_usd": 1,
           "partners": 58,
+          "top_partner_launches": 30,
           "examples": [
             {
               "name": "OSOR-SOL",
@@ -1055,16 +893,16 @@
         },
         {
           "value": ">1%",
-          "n": 117,
+          "n": 109,
           "alive": 20,
-          "alive_pct": 17,
+          "alive_pct": 18,
           "alive_ci95": [
-            11,
-            25
+            12,
+            27
           ],
-          "median_holders": 85,
-          "median_mcap_usd": 1906,
-          "partners": 74,
+          "median_holders": 86,
+          "partners": 70,
+          "top_partner_launches": 8,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -1090,16 +928,16 @@
         },
         {
           "value": "0.25–1%",
-          "n": 66,
+          "n": 45,
           "alive": 7,
-          "alive_pct": 11,
+          "alive_pct": 16,
           "alive_ci95": [
-            5,
-            20
+            8,
+            29
           ],
           "median_holders": 110,
-          "median_mcap_usd": 0,
-          "partners": 37,
+          "partners": 31,
+          "top_partner_launches": 5,
           "examples": [
             {
               "name": "CLAWB-SOL",
@@ -1114,12 +952,12 @@
               "damm_pool": "Jogd8FJ52DPAPzpRUwte1Hq1GQjZpRNr26dDVRAbigh"
             },
             {
-              "name": "ANTFUNLIFE-SOL",
-              "damm_pool": "8njyRdvpEq3TAWvxsozgj4DgHwwYqtcCi9nNtaqL3cNE"
+              "name": "PTOKEN-SOL",
+              "damm_pool": "A2YXa2vi6763MCoUa1Avcks2yg6TwM8JemGycq8WudCs"
             },
             {
               "name": "PTOKEN-SOL",
-              "damm_pool": "A2YXa2vi6763MCoUa1Avcks2yg6TwM8JemGycq8WudCs"
+              "damm_pool": "6MQsMjmWTx5TsYoRAUKdvLrzvZ6YAGFars4JAmZNjPiJ"
             }
           ]
         }
@@ -1131,16 +969,16 @@
       "groups": [
         {
           "value": "flat",
-          "n": 313,
+          "n": 289,
           "alive": 16,
-          "alive_pct": 5,
+          "alive_pct": 6,
           "alive_ci95": [
             3,
-            8
+            9
           ],
-          "median_holders": 139,
-          "median_mcap_usd": 1,
-          "partners": 132,
+          "median_holders": 142,
+          "partners": 123,
+          "top_partner_launches": 30,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -1155,27 +993,27 @@
               "damm_pool": "B7mM4YXGdBQJzyARmfLZjJQ1fUZ5WCeFMvFhsswUdbjJ"
             },
             {
-              "name": "ANTFUNLIFE-SOL",
-              "damm_pool": "8njyRdvpEq3TAWvxsozgj4DgHwwYqtcCi9nNtaqL3cNE"
-            },
-            {
               "name": "SPG107-SOL",
               "damm_pool": "LSL5qMRdnWFb4MQKS9J2e4BQL6GJ3bY1p6u4tAZr6La"
+            },
+            {
+              "name": "OSOR-SOL",
+              "damm_pool": "gENUS139Q7RxWnWSgwqEkmyeZBCqtCAFjuDyH4RLHnk"
             }
           ]
         },
         {
           "value": "decaying",
-          "n": 57,
+          "n": 52,
           "alive": 11,
-          "alive_pct": 19,
+          "alive_pct": 21,
           "alive_ci95": [
-            11,
-            31
+            12,
+            34
           ],
-          "median_holders": 104,
-          "median_mcap_usd": 2271,
-          "partners": 36,
+          "median_holders": 126,
+          "partners": 35,
+          "top_partner_launches": 7,
           "examples": [
             {
               "name": "LIB-SOL",
@@ -1207,16 +1045,16 @@
       "groups": [
         {
           "value": "some locked",
-          "n": 298,
+          "n": 270,
           "alive": 27,
-          "alive_pct": 9,
+          "alive_pct": 10,
           "alive_ci95": [
-            6,
-            13
+            7,
+            14
           ],
-          "median_holders": 163,
-          "median_mcap_usd": 2,
-          "partners": 116,
+          "median_holders": 169,
+          "partners": 107,
+          "top_partner_launches": 30,
           "examples": [
             {
               "name": "Myla-SOL",
@@ -1231,27 +1069,27 @@
               "damm_pool": "B7mM4YXGdBQJzyARmfLZjJQ1fUZ5WCeFMvFhsswUdbjJ"
             },
             {
-              "name": "ANTFUNLIFE-SOL",
-              "damm_pool": "8njyRdvpEq3TAWvxsozgj4DgHwwYqtcCi9nNtaqL3cNE"
-            },
-            {
               "name": "MELANIA-SOL",
               "damm_pool": "5h5eWTNdSXXby6ERt7mnUxeEmwKMx46p28uyGzNX4ABU"
+            },
+            {
+              "name": "Jesus-SOL",
+              "damm_pool": "B5ywQ9jYAAR5qM4GUEQU5Ze6vDQ6KnCb85V19zBUS8Nk"
             }
           ]
         },
         {
           "value": "none locked",
-          "n": 72,
+          "n": 71,
           "alive": 0,
           "alive_pct": 0,
           "alive_ci95": [
             0,
             5
           ],
-          "median_holders": 55,
-          "median_mcap_usd": 0,
-          "partners": 51,
+          "median_holders": 54,
+          "partners": 50,
+          "top_partner_launches": 8,
           "examples": [
             {
               "name": "SPG107-SOL",
@@ -1269,16 +1107,16 @@
   "presetEvidence": [
     {
       "preset": "steady",
-      "n": 50,
+      "n": 42,
       "alive": 12,
-      "alive_pct": 24,
+      "alive_pct": 29,
       "alive_ci95": [
-        14,
-        37
+        17,
+        44
       ],
-      "median_holders": 148,
-      "median_mcap_usd": 1713,
-      "partners": 30,
+      "median_holders": 126,
+      "partners": 29,
+      "top_partner_launches": 5,
       "alive_examples": [
         {
           "name": "Myla-SOL",
@@ -1340,8 +1178,8 @@
         48
       ],
       "median_holders": 92,
-      "median_mcap_usd": 2078,
       "partners": 14,
+      "top_partner_launches": 7,
       "alive_examples": [
         {
           "name": "LIB-SOL",
@@ -1386,50 +1224,127 @@
         2
       ],
       "median_holders": 165,
-      "median_mcap_usd": 1,
-      "partners": 58
+      "partners": 58,
+      "top_partner_launches": 30
     },
     {
       "id": "low-threshold",
       "text": "Graduates at under 20 SOL",
-      "n": 91,
+      "n": 83,
       "alive": 0,
       "alive_pct": 0,
       "alive_ci95": [
         0,
         4
       ],
-      "median_holders": 148,
-      "median_mcap_usd": 1,
-      "partners": 37
+      "median_holders": 154,
+      "partners": 33,
+      "top_partner_launches": 24
     },
     {
       "id": "nothing-locked",
       "text": "No liquidity is permanently locked after graduation",
-      "n": 72,
+      "n": 71,
       "alive": 0,
       "alive_pct": 0,
       "alive_ci95": [
         0,
         5
       ],
-      "median_holders": 55,
-      "median_mcap_usd": 0,
-      "partners": 51
+      "median_holders": 54,
+      "partners": 50,
+      "top_partner_launches": 8
     },
     {
       "id": "avoid",
       "text": "Any of the warning signs",
-      "n": 233,
+      "n": 225,
       "alive": 0,
       "alive_pct": 0,
       "alive_ci95": [
         0,
         2
       ],
-      "median_holders": 145,
-      "median_mcap_usd": 1,
-      "partners": 81
+      "median_holders": 150,
+      "partners": 77,
+      "top_partner_launches": 30
+    }
+  ],
+  "robustness": [
+    {
+      "tvl_usd": 500,
+      "baseline": {
+        "n": 341,
+        "alive": 34,
+        "alive_pct": 10
+      },
+      "presets": {
+        "steady": {
+          "n": 42,
+          "alive": 17,
+          "alive_pct": 40
+        },
+        "anti-sniper": {
+          "n": 25,
+          "alive": 7,
+          "alive_pct": 28
+        }
+      },
+      "avoid": {
+        "n": 225,
+        "alive": 0,
+        "alive_pct": 0
+      }
+    },
+    {
+      "tvl_usd": 1000,
+      "baseline": {
+        "n": 341,
+        "alive": 27,
+        "alive_pct": 8
+      },
+      "presets": {
+        "steady": {
+          "n": 42,
+          "alive": 12,
+          "alive_pct": 29
+        },
+        "anti-sniper": {
+          "n": 25,
+          "alive": 7,
+          "alive_pct": 28
+        }
+      },
+      "avoid": {
+        "n": 225,
+        "alive": 0,
+        "alive_pct": 0
+      }
+    },
+    {
+      "tvl_usd": 5000,
+      "baseline": {
+        "n": 341,
+        "alive": 4,
+        "alive_pct": 1
+      },
+      "presets": {
+        "steady": {
+          "n": 42,
+          "alive": 1,
+          "alive_pct": 2
+        },
+        "anti-sniper": {
+          "n": 25,
+          "alive": 0,
+          "alive_pct": 0
+        }
+      },
+      "avoid": {
+        "n": 225,
+        "alive": 0,
+        "alive_pct": 0
+      }
     }
   ]
 }

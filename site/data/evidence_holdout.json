@@ -10,22 +10,23 @@
     "not_dbc": 386,
     "errors": 0,
     "not_migrated": 51,
-    "graduated": 2063,
-    "spam": 898,
-    "spam_pct": 44,
-    "kept": 1165,
-    "alive_pct_all": 25,
+    "non_sol_quote": 173,
+    "graduated": 1890,
+    "spam": 887,
+    "spam_pct": 47,
+    "kept": 1003,
+    "alive_pct_all": 29,
     "self_serve": {
-      "n": 400,
+      "n": 377,
       "alive": 37,
-      "alive_pct": 9,
+      "alive_pct": 10,
       "alive_ci95": [
         7,
-        12
+        13
       ],
-      "median_holders": 147,
-      "median_mcap_usd": 1,
-      "partners": 189
+      "median_holders": 149,
+      "partners": 177,
+      "top_partner_launches": 27
     }
   },
   "evidence": [
@@ -35,16 +36,16 @@
       "groups": [
         {
           "value": "met-dbc",
-          "n": 400,
+          "n": 377,
           "alive": 37,
-          "alive_pct": 9,
+          "alive_pct": 10,
           "alive_ci95": [
             7,
-            12
+            13
           ],
-          "median_holders": 147,
-          "median_mcap_usd": 1,
-          "partners": 189,
+          "median_holders": 149,
+          "partners": 177,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -59,12 +60,12 @@
               "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
             },
             {
-              "name": "PAIRX-SOL",
-              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
-            },
-            {
               "name": "SpaceX-SOL",
               "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            },
+            {
+              "name": "Tesla AI-SOL",
+              "damm_pool": "36J77VbUeW5Qg5f5wdUCXfbENEbTm4LVwdUmLH1bxQDz"
             }
           ]
         },
@@ -78,8 +79,8 @@
             62
           ],
           "median_holders": 120,
-          "median_mcap_usd": 2059,
           "partners": 262,
+          "top_partner_launches": 3,
           "examples": [
             {
               "name": "BTH-SOL",
@@ -113,8 +114,8 @@
             21
           ],
           "median_holders": 111,
-          "median_mcap_usd": 7558,
           "partners": 76,
+          "top_partner_launches": 66,
           "examples": [
             {
               "name": "SAIDAR-SOL",
@@ -139,37 +140,6 @@
           ]
         },
         {
-          "value": "jup-studio",
-          "n": 102,
-          "alive": 2,
-          "alive_pct": 2,
-          "alive_ci95": [
-            1,
-            7
-          ],
-          "median_holders": 246,
-          "median_mcap_usd": 3351,
-          "partners": 1,
-          "examples": [
-            {
-              "name": "HAM-SOL",
-              "damm_pool": "B1Ro9WQXEBbfgiAxaokRannsDMH1ptUtv5imxmdDaJFQ"
-            },
-            {
-              "name": "GLIZZY-SOL",
-              "damm_pool": "Asw1bVeg4gLC8xs4cnMK2nNwUAUuEgHNVT78NYvNDoM7"
-            },
-            {
-              "name": "SHATURN-SOL",
-              "damm_pool": "D8h1JdUEFiwK451qU8XNuvBsrqciREqtEsSoQHo6uGjD"
-            },
-            {
-              "name": "milky-SOL",
-              "damm_pool": "CRhRCfie66PqRXnwYoSbZ72D5H2eA2ddAA27jkZPVBmX"
-            }
-          ]
-        },
-        {
           "value": "printr",
           "n": 29,
           "alive": 14,
@@ -179,8 +149,8 @@
             66
           ],
           "median_holders": 216,
-          "median_mcap_usd": 3704,
           "partners": 1,
+          "top_partner_launches": 29,
           "examples": [
             {
               "name": "NOOB-SOL",
@@ -214,8 +184,8 @@
             58
           ],
           "median_holders": 100,
-          "median_mcap_usd": 0,
           "partners": 1,
+          "top_partner_launches": 28,
           "examples": [
             {
               "name": "JOI-SOL",
@@ -249,8 +219,8 @@
             63
           ],
           "median_holders": 87,
-          "median_mcap_usd": 3729,
           "partners": 1,
+          "top_partner_launches": 25,
           "examples": [
             {
               "name": "SPACESHIBA-SOL",
@@ -303,34 +273,26 @@
           ]
         },
         {
-          "value": "moonshot",
-          "n": 13,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "pumPussy-SOL",
-              "damm_pool": "61E8F1HQxGwTEtBabireYNY6g4shzBrHoboqE2VEra1z"
-            },
-            {
-              "name": "JAMIE-SOL",
-              "damm_pool": "Bsb4bMe7S2r36jc51vACguHVb1mjzphB2HUCgVMqwadT"
-            }
-          ]
-        },
-        {
-          "value": "time.fun",
+          "value": "jup-studio",
           "n": 12,
-          "alive": 0,
+          "alive": 2,
           "too_few": true,
           "examples": [
             {
-              "name": "ultra-SOL",
-              "damm_pool": "29pzTK5k7wmfqcaWZUwwiYP5A1LWQsCFFHZZevbrRjwm"
+              "name": "HAM-SOL",
+              "damm_pool": "B1Ro9WQXEBbfgiAxaokRannsDMH1ptUtv5imxmdDaJFQ"
             },
             {
-              "name": "Pentoshi-SOL",
-              "damm_pool": "8kJLZgwjsuB5Ly3vA7LyYKySK1zt25KQC5oYDgqaafAk"
+              "name": "GLIZZY-SOL",
+              "damm_pool": "Asw1bVeg4gLC8xs4cnMK2nNwUAUuEgHNVT78NYvNDoM7"
+            },
+            {
+              "name": "WAVE-SOL",
+              "damm_pool": "6cVpe5ZyzxvT92zRb5HzasJEXkpWD98KfWzkjyy5LN5K"
+            },
+            {
+              "name": "MM-SOL",
+              "damm_pool": "8SowG9oFUyo546DV98QZmNQ9L4dkjw8SEcwvk7oU2hDB"
             }
           ]
         },
@@ -359,22 +321,6 @@
             {
               "name": "TPAYX-SOL",
               "damm_pool": "HbebhWNKdGGn96G5RY3sVWQTA2YEfjxcjtr3Vnxju2H"
-            }
-          ]
-        },
-        {
-          "value": "eitherway",
-          "n": 10,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "SPARQ-SOL",
-              "damm_pool": "78qtiES9B1CHcNk7yZy3ij2tp3JYm8LGaZRJviUzzixn"
-            },
-            {
-              "name": "SPARQ-SOL",
-              "damm_pool": "EtWmxBVmQughsrhBtumygQ4YKFsm6dr74NXGqpeEdMpk"
             }
           ]
         },
@@ -507,22 +453,6 @@
           ]
         },
         {
-          "value": "orynth",
-          "n": 6,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "JPYCI-SOL",
-              "damm_pool": "7iBgr5praqQZ14dSQoewoh6mR7SjLDj88VA5JAaey8nu"
-            },
-            {
-              "name": "PIE-SOL",
-              "damm_pool": "a3gRGdVkq7DDsPq6RoSfxsK9ik4HGq4eKJA5Nuo1NfW"
-            }
-          ]
-        },
-        {
           "value": "slerfpad",
           "n": 5,
           "alive": 0,
@@ -619,26 +549,6 @@
           ]
         },
         {
-          "value": "swarms.world",
-          "n": 3,
-          "alive": 1,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "MERGE-SOL",
-              "damm_pool": "qNjWdu3nfjqSBf4piv4g6htKzDCMH7LCMpmthgJET8s"
-            },
-            {
-              "name": "CLAWSWARM-SOL",
-              "damm_pool": "6dFWysrg5cdmxS2Nuj3EFBPTVMbagw46pKF931WMz6LL"
-            },
-            {
-              "name": "WARCLAUDE-SOL",
-              "damm_pool": "CsBz3M5ginu6M49znfG4J1FxKti1YuarfNBbXHJsodYc"
-            }
-          ]
-        },
-        {
           "value": "cooking.city",
           "n": 3,
           "alive": 1,
@@ -655,22 +565,6 @@
             {
               "name": "DBC-SOL",
               "damm_pool": "EQ2Ry9cKwCBg7v2DNSq3JProV7jhv5T1UWeT5U8tTkA5"
-            }
-          ]
-        },
-        {
-          "value": "audius",
-          "n": 3,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "R3LL-SOL",
-              "damm_pool": "DwxWy6RFPnedT7S11Hmg47JmV1yeX2ofvbTvbZbddP6n"
-            },
-            {
-              "name": "R3LL-SOL",
-              "damm_pool": "ocyqv83rodSbSnSusqdddoCuNXMhk7mtwy8eu3kDjnk"
             }
           ]
         },
@@ -723,18 +617,18 @@
           ]
         },
         {
-          "value": "america.fun",
+          "value": "swarms.world",
           "n": 2,
-          "alive": 0,
+          "alive": 1,
           "too_few": true,
           "examples": [
             {
-              "name": "RIAL-SOL",
-              "damm_pool": "ExzMiUppS6y1H2YSC4vddMxsdLNLKvjqYHcXP7jQjtuz"
+              "name": "MERGE-SOL",
+              "damm_pool": "qNjWdu3nfjqSBf4piv4g6htKzDCMH7LCMpmthgJET8s"
             },
             {
-              "name": "REVOLUTION -SOL",
-              "damm_pool": "Hr6C5gizwVQRYX9tAZVJLq2kMkUhqYvCJaAdwndZMH6g"
+              "name": "CLAWSWARM-SOL",
+              "damm_pool": "6dFWysrg5cdmxS2Nuj3EFBPTVMbagw46pKF931WMz6LL"
             }
           ]
         },
@@ -775,18 +669,6 @@
             {
               "name": "PURPS-SOL",
               "damm_pool": "FTG82ngDDGxTgDLjqTUBo5GCvuZQJTj8jrAHUGhH9H4X"
-            }
-          ]
-        },
-        {
-          "value": "soar",
-          "n": 1,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "MIXOOR-SOL",
-              "damm_pool": "F78wXBtKsrX8rSToiDoUkZzALjqDMnEM36DHceqz4Z1f"
             }
           ]
         },
@@ -837,18 +719,6 @@
               "damm_pool": "71xkxsgrgZi71wnc1xBJ8ekc3g7QVRbyeNqpZNDs9ubx"
             }
           ]
-        },
-        {
-          "value": "here.fun",
-          "n": 1,
-          "alive": 0,
-          "too_few": true,
-          "examples": [
-            {
-              "name": "BANG-SOL",
-              "damm_pool": "4gD4gpYy1dgKgWvrkAcykUTKBepXt2VoMsdxWr651RSr"
-            }
-          ]
         }
       ]
     },
@@ -858,16 +728,16 @@
       "groups": [
         {
           "value": "60–100 SOL",
-          "n": 157,
+          "n": 156,
           "alive": 20,
           "alive_pct": 13,
           "alive_ci95": [
             8,
             19
           ],
-          "median_holders": 113,
-          "median_mcap_usd": 1,
-          "partners": 103,
+          "median_holders": 114,
+          "partners": 102,
+          "top_partner_launches": 13,
           "examples": [
             {
               "name": "THIRSTCOIN-SOL",
@@ -882,27 +752,27 @@
               "damm_pool": "Chihmeu2dDSCE55aKJKMfNBJzTxy7LXuwrnzN4iUbFk4"
             },
             {
-              "name": "PAIRX-SOL",
-              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
-            },
-            {
               "name": "SpaceX-SOL",
               "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            },
+            {
+              "name": "Tesla AI-SOL",
+              "damm_pool": "36J77VbUeW5Qg5f5wdUCXfbENEbTm4LVwdUmLH1bxQDz"
             }
           ]
         },
         {
           "value": "<20 SOL",
-          "n": 101,
+          "n": 98,
           "alive": 0,
           "alive_pct": 0,
           "alive_ci95": [
             0,
             4
           ],
-          "median_holders": 149,
-          "median_mcap_usd": 1,
-          "partners": 34,
+          "median_holders": 150,
+          "partners": 31,
+          "top_partner_launches": 21,
           "examples": [
             {
               "name": "XPD-SOL",
@@ -915,52 +785,17 @@
           ]
         },
         {
-          "value": "≥100 SOL",
-          "n": 78,
-          "alive": 14,
-          "alive_pct": 18,
-          "alive_ci95": [
-            11,
-            28
-          ],
-          "median_holders": 205,
-          "median_mcap_usd": 4890,
-          "partners": 42,
-          "examples": [
-            {
-              "name": "MODRIC-SOL",
-              "damm_pool": "4jwzNcz5gkXW9gAQz89GE4q6bNTDXiTFiU6ee7nNMRTp"
-            },
-            {
-              "name": "SANA-SOL",
-              "damm_pool": "4ekV3ysaEHkqxCerLTEncRYbaxNEsaD8t8Pcg9aGJDst"
-            },
-            {
-              "name": "BAGR-SOL",
-              "damm_pool": "94bDLSB85vSbe9sCkZXEpAhBGJ62fsvLtxYaT4cCp3iH"
-            },
-            {
-              "name": "Narwhal-SOL",
-              "damm_pool": "2vMRz2otqwbNLjhML7WvKkducJRP7zxuHYkVnUcqutuA"
-            },
-            {
-              "name": "PNR-SOL",
-              "damm_pool": "3BfHWFMRX7J21D6SbEXXEy5DyxecSKCxAufpt2arGTsP"
-            }
-          ]
-        },
-        {
           "value": "20–60 SOL",
-          "n": 64,
+          "n": 63,
           "alive": 3,
           "alive_pct": 5,
           "alive_ci95": [
             2,
             13
           ],
-          "median_holders": 158,
-          "median_mcap_usd": 1,
-          "partners": 30,
+          "median_holders": 159,
+          "partners": 29,
+          "top_partner_launches": 6,
           "examples": [
             {
               "name": "KNEWIT-SOL",
@@ -983,6 +818,41 @@
               "damm_pool": "EhwcbKAadLMxMdjnRBYk9cxAeGrZmr8zhhA5GQMCcGSQ"
             }
           ]
+        },
+        {
+          "value": "≥100 SOL",
+          "n": 60,
+          "alive": 14,
+          "alive_pct": 23,
+          "alive_ci95": [
+            14,
+            35
+          ],
+          "median_holders": 282,
+          "partners": 35,
+          "top_partner_launches": 12,
+          "examples": [
+            {
+              "name": "MODRIC-SOL",
+              "damm_pool": "4jwzNcz5gkXW9gAQz89GE4q6bNTDXiTFiU6ee7nNMRTp"
+            },
+            {
+              "name": "SANA-SOL",
+              "damm_pool": "4ekV3ysaEHkqxCerLTEncRYbaxNEsaD8t8Pcg9aGJDst"
+            },
+            {
+              "name": "BAGR-SOL",
+              "damm_pool": "94bDLSB85vSbe9sCkZXEpAhBGJ62fsvLtxYaT4cCp3iH"
+            },
+            {
+              "name": "Narwhal-SOL",
+              "damm_pool": "2vMRz2otqwbNLjhML7WvKkducJRP7zxuHYkVnUcqutuA"
+            },
+            {
+              "name": "ufun-SOL",
+              "damm_pool": "6z1nr6cbCnumV36rn3EjeheKZw7bwySkTeghbbJ88gEW"
+            }
+          ]
         }
       ]
     },
@@ -1000,8 +870,8 @@
             3
           ],
           "median_holders": 154,
-          "median_mcap_usd": 1,
           "partners": 62,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "COIL-SOL",
@@ -1023,16 +893,16 @@
         },
         {
           "value": ">1%",
-          "n": 126,
+          "n": 117,
           "alive": 29,
-          "alive_pct": 23,
+          "alive_pct": 25,
           "alive_ci95": [
-            17,
-            31
+            18,
+            33
           ],
-          "median_holders": 111,
-          "median_mcap_usd": 2512,
-          "partners": 90,
+          "median_holders": 112,
+          "partners": 83,
+          "top_partner_launches": 12,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -1047,27 +917,27 @@
               "damm_pool": "BnThfrccLgkmXmPwLm6Qh3vivaRuL2uqSsHLQgRhD9GF"
             },
             {
-              "name": "PAIRX-SOL",
-              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
-            },
-            {
               "name": "ROCKET-SOL",
               "damm_pool": "BZwpkmJoYMTU2zb5Tfr2654dGrfz7eFnjWaMyZzJLyyg"
+            },
+            {
+              "name": "TVT-SOL",
+              "damm_pool": "DtpJq7xBmgk9wDBH1Gn38d2um1o7G3tBz75EBsCyJ3MB"
             }
           ]
         },
         {
           "value": "0.25–1%",
-          "n": 54,
+          "n": 40,
           "alive": 6,
-          "alive_pct": 11,
+          "alive_pct": 15,
           "alive_ci95": [
-            5,
-            22
+            7,
+            29
           ],
-          "median_holders": 143,
-          "median_mcap_usd": 713,
-          "partners": 39,
+          "median_holders": 165,
+          "partners": 34,
+          "top_partner_launches": 4,
           "examples": [
             {
               "name": "THIRSTCOIN-SOL",
@@ -1099,16 +969,16 @@
       "groups": [
         {
           "value": "flat",
-          "n": 337,
+          "n": 321,
           "alive": 26,
           "alive_pct": 8,
           "alive_ci95": [
-            5,
-            11
+            6,
+            12
           ],
-          "median_holders": 140,
-          "median_mcap_usd": 1,
-          "partners": 153,
+          "median_holders": 142,
+          "partners": 146,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "THIRSTCOIN-SOL",
@@ -1123,27 +993,27 @@
               "damm_pool": "Chihmeu2dDSCE55aKJKMfNBJzTxy7LXuwrnzN4iUbFk4"
             },
             {
-              "name": "PAIRX-SOL",
-              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
-            },
-            {
               "name": "SpaceX-SOL",
               "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            },
+            {
+              "name": "Tesla AI-SOL",
+              "damm_pool": "36J77VbUeW5Qg5f5wdUCXfbENEbTm4LVwdUmLH1bxQDz"
             }
           ]
         },
         {
           "value": "decaying",
-          "n": 63,
+          "n": 56,
           "alive": 11,
-          "alive_pct": 17,
+          "alive_pct": 20,
           "alive_ci95": [
-            10,
-            29
+            11,
+            32
           ],
-          "median_holders": 270,
-          "median_mcap_usd": 4789,
-          "partners": 39,
+          "median_holders": 464,
+          "partners": 34,
+          "top_partner_launches": 11,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -1175,16 +1045,16 @@
       "groups": [
         {
           "value": "some locked",
-          "n": 337,
+          "n": 315,
           "alive": 36,
           "alive_pct": 11,
           "alive_ci95": [
             8,
-            14
+            15
           ],
-          "median_holders": 156,
-          "median_mcap_usd": 1,
-          "partners": 141,
+          "median_holders": 157,
+          "partners": 130,
+          "top_partner_launches": 27,
           "examples": [
             {
               "name": "MODRIC-SOL",
@@ -1199,27 +1069,27 @@
               "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
             },
             {
-              "name": "PAIRX-SOL",
-              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
-            },
-            {
               "name": "SpaceX-SOL",
               "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            },
+            {
+              "name": "Tesla AI-SOL",
+              "damm_pool": "36J77VbUeW5Qg5f5wdUCXfbENEbTm4LVwdUmLH1bxQDz"
             }
           ]
         },
         {
           "value": "none locked",
-          "n": 63,
+          "n": 62,
           "alive": 1,
           "alive_pct": 2,
           "alive_ci95": [
             0,
-            8
+            9
           ],
           "median_holders": 55,
-          "median_mcap_usd": 0,
-          "partners": 48,
+          "partners": 47,
+          "top_partner_launches": 5,
           "examples": [
             {
               "name": "SPARKY-SOL",
@@ -1241,16 +1111,16 @@
   "presetEvidence": [
     {
       "preset": "steady",
-      "n": 49,
+      "n": 43,
       "alive": 13,
-      "alive_pct": 27,
+      "alive_pct": 30,
       "alive_ci95": [
-        16,
-        40
+        19,
+        45
       ],
-      "median_holders": 161,
-      "median_mcap_usd": 2326,
-      "partners": 40,
+      "median_holders": 154,
+      "partners": 39,
+      "top_partner_launches": 3,
       "alive_examples": [
         {
           "name": "THIRSTCOIN-SOL",
@@ -1331,41 +1201,41 @@
         3
       ],
       "median_holders": 154,
-      "median_mcap_usd": 1,
-      "partners": 62
+      "partners": 62,
+      "top_partner_launches": 27
     },
     {
       "id": "low-threshold",
       "text": "Graduates at under 20 SOL",
-      "n": 101,
+      "n": 98,
       "alive": 0,
       "alive_pct": 0,
       "alive_ci95": [
         0,
         4
       ],
-      "median_holders": 149,
-      "median_mcap_usd": 1,
-      "partners": 34
+      "median_holders": 150,
+      "partners": 31,
+      "top_partner_launches": 21
     },
     {
       "id": "nothing-locked",
       "text": "No liquidity is permanently locked after graduation",
-      "n": 63,
+      "n": 62,
       "alive": 1,
       "alive_pct": 2,
       "alive_ci95": [
         0,
-        8
+        9
       ],
       "median_holders": 55,
-      "median_mcap_usd": 0,
-      "partners": 48
+      "partners": 47,
+      "top_partner_launches": 5
     },
     {
       "id": "avoid",
       "text": "Any of the warning signs",
-      "n": 252,
+      "n": 248,
       "alive": 3,
       "alive_pct": 1,
       "alive_ci95": [
@@ -1373,8 +1243,85 @@
         3
       ],
       "median_holders": 146,
-      "median_mcap_usd": 1,
-      "partners": 84
+      "partners": 80,
+      "top_partner_launches": 27
+    }
+  ],
+  "robustness": [
+    {
+      "tvl_usd": 500,
+      "baseline": {
+        "n": 377,
+        "alive": 39,
+        "alive_pct": 10
+      },
+      "presets": {
+        "steady": {
+          "n": 43,
+          "alive": 14,
+          "alive_pct": 33
+        },
+        "anti-sniper": {
+          "n": 7,
+          "alive": 1,
+          "alive_pct": 14
+        }
+      },
+      "avoid": {
+        "n": 248,
+        "alive": 3,
+        "alive_pct": 1
+      }
+    },
+    {
+      "tvl_usd": 1000,
+      "baseline": {
+        "n": 377,
+        "alive": 37,
+        "alive_pct": 10
+      },
+      "presets": {
+        "steady": {
+          "n": 43,
+          "alive": 13,
+          "alive_pct": 30
+        },
+        "anti-sniper": {
+          "n": 7,
+          "alive": 1,
+          "alive_pct": 14
+        }
+      },
+      "avoid": {
+        "n": 248,
+        "alive": 3,
+        "alive_pct": 1
+      }
+    },
+    {
+      "tvl_usd": 5000,
+      "baseline": {
+        "n": 377,
+        "alive": 19,
+        "alive_pct": 5
+      },
+      "presets": {
+        "steady": {
+          "n": 43,
+          "alive": 3,
+          "alive_pct": 7
+        },
+        "anti-sniper": {
+          "n": 7,
+          "alive": 1,
+          "alive_pct": 14
+        }
+      },
+      "avoid": {
+        "n": 248,
+        "alive": 1,
+        "alive_pct": 0
+      }
     }
   ]
 }

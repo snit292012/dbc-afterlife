@@ -4,10 +4,13 @@ import * as esbuild from "esbuild";
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 mkdirSync("site/data/presets", { recursive: true });
-for (const f of ["evidence.json", "evidence_holdout.json", "evidence_confirm.json", "evidence_all.json", "simulation.json"])
+for (const f of ["evidence.json", "evidence_holdout.json", "evidence_confirm.json", "evidence_all.json", "evidence_test.json", "simulation.json"])
   if (existsSync(`data/${f}`)) copyFileSync(`data/${f}`, `site/data/${f}`);
 const presets = JSON.parse(readFileSync("presets/specs.json", "utf8")).map((p: any) => p.id);
-for (const id of presets) copyFileSync(`presets/${id}.json`, `site/data/presets/${id}.json`);
+for (const id of presets) {
+  copyFileSync(`presets/${id}.json`, `site/data/presets/${id}.json`);
+  if (existsSync(`data/devnet_${id}.json`)) copyFileSync(`data/devnet_${id}.json`, `site/data/devnet_${id}.json`);
+}
 writeFileSync("site/data/site.json", JSON.stringify({ repo_url: process.env.REPO_URL ?? "#", presets }, null, 2));
 
 await esbuild.build({

@@ -38,8 +38,12 @@ Three things stand out:
    almost no real buying. Any graduation statistic that counts them is meaningless.
 2. **Most real graduates die anyway.** Ranking settings by graduation rate stops one step too early.
 3. **The launchpad matters more than any single setting**, so settings are compared only within
-   self-serve Meteora (`met-dbc`) launches. Within that group, three warning signs (starting fee ≤ 0.25%,
-   threshold under 20 SOL, no locked liquidity) predict a dead pool in every sample we tested.
+   self-serve Meteora (`met-dbc`) launches. Within that group, launches with any of three warning signs
+   (starting fee ≤ 0.25%, threshold under 20 SOL, no locked liquidity) almost never survive, in every
+   sample we tested.
+4. **Good settings prevent failure; they don't create success.** The Steady pattern's lead is clear when
+   "alive" means $500 or $1,000 of liquidity, but at $5,000 almost nothing survives in any group (see the
+   robustness table in RESULTS*.md).
 
 These are associations among graduated launches, not causes. See [DATA_NOTE.md](DATA_NOTE.md).
 
@@ -68,6 +72,15 @@ if (verdict.level === "red") console.warn(verdict.headline, verdict.warnings);
 **Presets.** `presets/steady.json` and `presets/anti-sniper.json` hold SDK `ConfigParameters` (numbers as
 decimal strings). To get BN-typed parameters ready for `client.partner.createConfig`, call
 `buildPreset(spec)` from `presets.ts` with a spec from `presets/specs.json`.
+
+Both presets were launched on devnet with `npx tsx devnet.ts <id>` (config → token → test buy):
+
+| Preset | Config | Token | Buy |
+|---|---|---|---|
+| steady | [createConfig](https://explorer.solana.com/tx/5rThuMMCv9nXYLx92XUsmrvNzB5w9CHVJ5BJ1DydayAgJsScUkJXSSsTLKQhNASTgM5sVtCtv2Z2MdeaYwTG3xSe?cluster=devnet) | [createPool](https://explorer.solana.com/tx/4aaQHG5NXFTwvUu9vNqZQ4MaXMFjVVQMcJK6Nkc4nLi3TE591wjuqjuT58WVXgPBUbnBptL4fN84MyFYdTMxZwcB?cluster=devnet) | [test buy](https://explorer.solana.com/tx/2dwUZt3dA7Xn6FD8xhh8uUUjS765aTxejx1ivCCGdFFi99LtnNfbKi1s3irUDdCGFMWf6YibELaY58r1crqwKrAo?cluster=devnet) |
+| anti-sniper | [createConfig](https://explorer.solana.com/tx/4A4cNkYQCMk9tLuC58DP1FbvidBvBTcmisc8qHkJaBwZTsJYhCMEoRyNju29yjxWzQdqmWapQY5zbhtzkv69i4Ho?cluster=devnet) | [createPool](https://explorer.solana.com/tx/3cqbs3tg1EnSdz2ydCSYfrq3QhZjpLHxt2xPjMDquiyHhxrEKxgzuvgRaK4xoWQDxvfVpQVEXkH5G8asZP2c3RJr?cluster=devnet) | [test buy](https://explorer.solana.com/tx/rGfUmgvENXyoPhwDeWY13WCkrhpzSiCvzDy8sjCZn99ZNCrGACNnqzKb4eWgm4f5CSAJLPw4T7j5bkGLuGWveXD?cluster=devnet) |
+
+**CI pre-flight**: `npx tsx check.ts --strict my-config.json` exits with code 2 on a red verdict.
 
 ## How it works
 
@@ -100,10 +113,16 @@ rules.ts (frozen definitions) ──► analyze.ts ──► data/evidence*.json
   later change is logged there with its reason and its effect on the numbers.
 - **Holdout and confirmation samples.** Preset and warning rules were picked on the Discovery sample, frozen,
   then measured on samples nobody had looked at.
-- **Two lookup methods agree.** Configs found through Meteora's DBC API were compared with direct
-  `getProgramAccounts` lookups on the same 40 launches: 40 of 40 matched.
+- **Verdicts use held-out data.** The checker's numbers come only from samples that were not used to choose
+  the rules (`data/evidence_test.json`).
+- **Two lookup methods agree.** For the 40 launches that both methods looked up, configs found through
+  Meteora's DBC API matched direct `getProgramAccounts` lookups (same config, threshold and fee) in 40 of 40.
 - **The chain accepts the presets.** `simulate.ts` sends each preset's `createConfig` to mainnet as a
   simulation: both succeed, and a control that reuses an existing config address is rejected.
+- **The presets launch.** `devnet.ts` created each preset's config on devnet, launched a test token on it
+  and made a test buy; reading the config back gives the same threshold and fee
+  (`data/devnet_*.json`, links below).
+- **Robustness.** Every comparison is repeated with "alive" at $500 and $5,000 of liquidity.
 - **Tests.** Settings parsing on a real mainnet config, every warning path, preset validity, and both
   negative controls.
 
