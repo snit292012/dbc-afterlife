@@ -225,6 +225,7 @@ async function main() {
   const devnet = Object.fromEntries(await Promise.all((site?.presets ?? []).map(async (id: string) => [id, await tryJson(`data/devnet_${id}.json`)])));
   const repo = site?.repo_url ?? "#";
   ($("repo-link") as HTMLAnchorElement).href = repo;
+  ($("pad-link") as HTMLAnchorElement).href = `${repo}/tree/main/integrations/fun-launch`;
   wireChecker(test);
   renderFindings(all, sets);
   renderPresets(test, sets, presets, await tryJson("data/simulation.json"), devnet);

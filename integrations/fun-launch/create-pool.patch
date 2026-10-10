@@ -1,0 +1,22 @@
+diff --git a/scaffolds/fun-launch/src/pages/create-pool.tsx b/scaffolds/fun-launch/src/pages/create-pool.tsx
+index 025ba5c..bb22e09 100644
+--- a/scaffolds/fun-launch/src/pages/create-pool.tsx
++++ b/scaffolds/fun-launch/src/pages/create-pool.tsx
+@@ -3,6 +3,7 @@ import Head from 'next/head';
+ import Link from 'next/link';
+ import { z } from 'zod';
+ import Header from '../components/Header';
++import { LaunchHealth } from '../components/LaunchHealth';
+ 
+ import { useForm } from '@tanstack/react-form';
+ import { Button } from '@/components/ui/button';
+@@ -170,6 +171,9 @@ export default function CreatePool() {
+               }}
+               className="space-y-8"
+             >
++              {/* Launch health: how launches with this launchpad's settings fared after graduation */}
++              <LaunchHealth />
++
+               {/* Token Details Section */}
+               <div className="rounded-xl border border-neutral-850 bg-neutral-925 p-5 sm:p-8">
+                 <h2 className="text-xl md:text-2xl font-bold mb-4">Token Details</h2>

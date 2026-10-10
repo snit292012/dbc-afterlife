@@ -9,8 +9,13 @@ launch presets that the evidence supports.
   with warnings for the settings that almost never survive.
 - **Plan a launch** — try settings before you create a config, or call the checker from code before
   `createConfig`.
-- **Use a preset** — two presets built with Meteora's SDK, validated by the SDK, and accepted by the live
-  mainnet DBC program in simulation.
+- **Use a preset** — two presets built with Meteora's SDK, validated by the SDK, accepted by the live
+  mainnet DBC program in simulation, and launched end to end on devnet.
+- **Build it into a launchpad** — a drop-in for Meteora's own
+  [fun-launch scaffold](integrations/fun-launch/) shows creators a "launch health" badge for the
+  launchpad's config right above the token form.
+
+![Launch health badge inside Meteora's fun-launch scaffold](integrations/fun-launch/img/red.jpg)
 
 Live site: https://snit292012.github.io/dbc-afterlife/
 
@@ -105,6 +110,7 @@ rules.ts (frozen definitions) ──► analyze.ts ──► data/evidence*.json
 | `simulate.ts` | Simulate `createConfig` for each preset against the mainnet DBC program (nothing is sent) |
 | `devnet.ts` | Optional devnet launch of a preset (needs devnet SOL) |
 | `docs/` | Static site; `npx tsx build-site.ts` bundles it |
+| `integrations/fun-launch/` | Launch-health badge + API route for Meteora's fun-launch scaffold |
 | `test/` | `npx tsx --test test/*.test.ts` |
 
 ## How we checked ourselves

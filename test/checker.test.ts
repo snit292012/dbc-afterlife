@@ -62,3 +62,9 @@ test("wilson interval matches known values", () => {
   assert.deepEqual(wilson(0, 187), [0, 2]);
   assert.deepEqual(wilson(12, 50), [14, 37]);
 });
+
+test("the fun-launch integration's vendored rules and checker match the root copies", () => {
+  const norm = (s: string) => s.replace(/from "\.\/rules(\.ts)?"/g, 'from "./rules"').replace(/\r\n/g, "\n");
+  for (const f of ["rules.ts", "checker.ts"])
+    assert.equal(norm(readFileSync(`integrations/fun-launch/src/lib/afterlife/${f}`, "utf8")), norm(readFileSync(f, "utf8")), f);
+});
