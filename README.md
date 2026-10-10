@@ -12,7 +12,7 @@ launch presets that the evidence supports.
 - **Use a preset** — two presets built with Meteora's SDK, validated by the SDK, and accepted by the live
   mainnet DBC program in simulation.
 
-Live site: {{live_url}}
+Live site: https://snit292012.github.io/dbc-afterlife/
 
 ## What the data says
 
@@ -104,7 +104,7 @@ rules.ts (frozen definitions) ──► analyze.ts ──► data/evidence*.json
 | `presets.ts` | Build presets with the SDK's `buildCurve`, validate with `validateConfigParameters` |
 | `simulate.ts` | Simulate `createConfig` for each preset against the mainnet DBC program (nothing is sent) |
 | `devnet.ts` | Optional devnet launch of a preset (needs devnet SOL) |
-| `site/` | Static site; `npx tsx build-site.ts` bundles it |
+| `docs/` | Static site; `npx tsx build-site.ts` bundles it |
 | `test/` | `npx tsx --test test/*.test.ts` |
 
 ## How we checked ourselves
