@@ -85,7 +85,7 @@ function renderFindings(all: SetEv, sets: (SetEv | null)[]) {
   const self = s.self_serve as Stat;
   $("snapshot").textContent = `Mainnet snapshot ${s.snapshot.slice(0, 10)}`;
   $("headline").innerHTML = `Graduating isn't success. Of ${fmt(self.n)} graduated self-serve Meteora launches we traced, <strong>${self.alive_pct}% still have $1k of liquidity</strong>.`;
-  $("found-intro").textContent = `${fmt(s.rows)} randomly sampled graduated pools from Meteora's DAMM v2 API, each traced back to the DBC config it launched with. ` +
+  $("found-intro").textContent = `${fmt(s.rows)} SOL-paired pools from Meteora's DAMM v2 API (every one in our snapshot at least 30 days old from a launchpad that uses DBC), each traced back to the DBC config it launched with. ` +
     `Settings are compared within self-serve (${SELF_SERVE}) launches, because the launchpad a token uses matters more than any single setting.`;
 
   const lp = all.evidence.find((f) => f.family === "Launchpad")!.groups.filter((g) => !g.too_few);
@@ -153,8 +153,8 @@ function renderPresets(all: SetEv, sets: (SetEv | null)[], presets: any[], sim: 
 function renderMethod(all: SetEv, sets: (SetEv | null)[], repo: string) {
   const sizes = SETS.map((x, i) => sets[i] ? `${x.label.toLowerCase()} ${fmt(sets[i]!.summary.rows)} pools` : null).filter(Boolean).join(", ");
   $("method").innerHTML = `
-    <p><strong>Data.</strong> Every pool in Meteora's public DAMM v2 API (snapshot ${esc(all.summary.snapshot.slice(0, 16).replace("T", " "))} UTC). We kept SOL-quoted pools at least 30 days old from launchpads that use DBC, shuffled them with a fixed seed and split them: ${sizes}. Each token is matched to its DBC pool through Meteora's DBC API, and its config is read and decoded from mainnet with the official SDK. For the 40 launches that both methods looked up, Meteora's DBC API and direct <code>getProgramAccounts</code> lookups found the same config with the same settings in all 40 cases. The checker's verdicts use only the samples that were not used to choose the rules.</p>
-    <p><strong>Outcome.</strong> "Alive" means the graduated pool still holds at least $1,000 of liquidity at the snapshot. Spam (threshold under 1 SOL) and blacklisted pools are excluded. Every percentage carries a 95% range, and groups under 20 launches are shown as "too few to say".</p>
+    <p><strong>Data.</strong> A snapshot of Meteora's public DAMM v2 API taken ${esc(all.summary.snapshot.slice(0, 16).replace("T", " "))} UTC (134,538 unique pools; the API's order shifted while we paged through it, so some pools were missed, see DATA_NOTE.md). We kept SOL-quoted pools at least 30 days old from launchpads that use DBC, shuffled them with a fixed seed and split them: ${sizes}. Each token is matched to its DBC pool through Meteora's DBC API, and its config is read and decoded from mainnet with the official SDK. For the 40 launches that both methods looked up, Meteora's DBC API and direct <code>getProgramAccounts</code> lookups found the same config with the same settings in all 40 cases. The checker's verdicts use only the samples that were not used to choose the rules.</p>
+    <p><strong>Outcome.</strong> "Alive" means the graduated pool still holds at least $1,000 of liquidity at the snapshot. Spam (threshold under 1 SOL), blacklisted pools and bonding curves quoted in tokens other than SOL are excluded. Every percentage carries a 95% range, and groups under 20 launches are shown as "too few to say".</p>
     <p><strong>Guarding against ourselves.</strong> All rules were written down before results were read, and changes are logged with reasons. Preset and warning rules were picked on the discovery sample, frozen, and only then measured on the holdout and confirmation samples.</p>
     <p><strong>What this can't tell you.</strong></p>
     <ul style="margin:0;padding-left:1.2em;display:grid;gap:6px;max-width:68ch">

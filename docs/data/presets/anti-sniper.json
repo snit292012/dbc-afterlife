@@ -1,7 +1,7 @@
 {
   "id": "anti-sniper",
-  "title": "Anti-sniper (promising, not confirmed)",
-  "why": "Same graduation and lock as Steady, but the fee starts at 50% and decays to 2% over the first 2 minutes so first-second bots pay heavily. Looked good on the discovery sample; the holdout had too few matching launches to confirm.",
+  "title": "Anti-sniper",
+  "why": "Same graduation and lock as Steady, but the fee starts at 50% and decays to 2% over the first 2 minutes so first-second bots pay heavily. Chosen on the discovery sample; the holdout had too few matching launches, and the much larger confirmation sample then confirmed it.",
   "thresholdSol": 85,
   "startFeeBps": 5000,
   "endFeeBps": 200,

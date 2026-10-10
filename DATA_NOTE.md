@@ -54,6 +54,13 @@ These rules are frozen. If one changes later, the change and the reason are logg
 5. 2026-10-10: a third, larger **confirmation** sample (every remaining candidate, 5000+) is collected with
    the rules frozen, as a further test.
 
+6. 2026-10-10, **confirmation result** (rules unchanged): 16,413 pools, 13,871 traced, 12,278 SOL-quoted
+   graduates, 47% spam, 6,549 kept. Self-serve baseline 10% (232/2,251). Steady 34% (81/239), anti-sniper
+   31% (37/120) - anti-sniper was "too few to say" in the holdout and is now confirmed. Any warning sign 0%
+   (5/1,475). Collector change before this run: decode accounts one by one (Anchor's batch fetch failed a whole
+   batch of 100 on one non-config account); re-running the discovery join with the new decoder changed 0 of
+   2,500 rows. 2 accounts were undecodable.
+
 ## Known limits
 - Snapshot paging: API order shifted while paging, so 170,444 listed → 134,538 unique pools seen.
 - Concentration: within self-serve, the biggest single partner (fee claimer) has 30 of the 187 ≤0.25%-fee

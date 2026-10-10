@@ -103,13 +103,22 @@ async function lookup(max: number) {
 // Step 2: decode DBC pools + configs on-chain, 100 accounts per RPC call, and join -> launches.jsonl.
 async function join() {
   const rows = readFileSync(`data/lookup${SUF}.jsonl`, "utf8").trim().split("\n").map((l) => JSON.parse(l));
-  const { program } = createDbcProgram(new Connection(process.env.RPC_URL ?? "https://api.mainnet-beta.solana.com", "confirmed"));
+  const connection = new Connection(process.env.RPC_URL ?? "https://api.mainnet-beta.solana.com", "confirmed");
+  const { program } = createDbcProgram(connection);
+  // Raw batch read + per-account decode: one account that isn't a valid config/pool (e.g. closed and reused)
+  // must only drop itself, not fail its whole batch of 100 the way Anchor's fetchMultiple does.
+  let undecodable = 0;
   const fetchAll = async (kind: "poolConfig" | "virtualPool", keys: string[]) => {
     const m = new Map<string, any>();
     for (let i = 0; i < keys.length; i += 100) {
       const chunk = keys.slice(i, i + 100);
-      const accs: any[] = await retry(() => (program.account as any)[kind].fetchMultiple(chunk.map((k) => new PublicKey(k))), kind);
-      chunk.forEach((k, j) => m.set(k, accs[j]));
+      const infos = await retry(() => connection.getMultipleAccountsInfo(chunk.map((k) => new PublicKey(k))), kind);
+      chunk.forEach((k, j) => {
+        const info = infos[j];
+        if (!info) return;
+        try { const acc = program.coder.accounts.decode(kind, info.data); m.set(k, acc.poolConfig ?? acc); }
+        catch { undecodable++; }
+      });
       await sleep(500);
     }
     return m;
@@ -120,11 +129,11 @@ async function join() {
   const out = rows.map((r) => {
     if (!r.config) return { ...r, ok: false, why: "no DBC pool" };
     const cfg = cfgs.get(r.config), pool = pools.get(r.dbc_pool);
-    if (!cfg || !pool) return { ...r, ok: false, why: "account missing on-chain" };
+    if (!cfg || !pool) return { ...r, ok: false, why: "account missing or not decodable" };
     return { ...r, ok: true, is_migrated: (pool.poolState ?? pool).isMigrated, config_state: plain(cfg) };
   });
   writeFileSync(`data/launches${SUF}.jsonl`, out.map((r) => JSON.stringify(r)).join("\n") + "\n");
-  console.log(`join: ${out.filter((r) => r.ok).length}/${out.length} ok -> data/launches${SUF}.jsonl`);
+  console.log(`join: ${out.filter((r) => r.ok).length}/${out.length} ok (${undecodable} undecodable accounts) -> data/launches${SUF}.jsonl`);
 }
 
 const [cmd, arg] = process.argv.slice(2);
