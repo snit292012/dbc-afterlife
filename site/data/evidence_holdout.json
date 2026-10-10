@@ -1,0 +1,1380 @@
+{
+  "summary": {
+    "set": "holdout",
+    "files": [
+      "data/launches_holdout.jsonl"
+    ],
+    "snapshot": "2026-10-09T23:28:25.307Z",
+    "rows": 2500,
+    "traced": 2114,
+    "not_dbc": 386,
+    "errors": 0,
+    "not_migrated": 51,
+    "graduated": 2063,
+    "spam": 898,
+    "spam_pct": 44,
+    "kept": 1165,
+    "alive_pct_all": 25,
+    "self_serve": {
+      "n": 400,
+      "alive": 37,
+      "alive_pct": 9,
+      "alive_ci95": [
+        7,
+        12
+      ],
+      "median_holders": 147,
+      "median_mcap_usd": 1,
+      "partners": 189
+    }
+  },
+  "evidence": [
+    {
+      "family": "Launchpad",
+      "scope": "all kept launches (shows the confounder)",
+      "groups": [
+        {
+          "value": "met-dbc",
+          "n": 400,
+          "alive": 37,
+          "alive_pct": 9,
+          "alive_ci95": [
+            7,
+            12
+          ],
+          "median_holders": 147,
+          "median_mcap_usd": 1,
+          "partners": 189,
+          "examples": [
+            {
+              "name": "MODRIC-SOL",
+              "damm_pool": "4jwzNcz5gkXW9gAQz89GE4q6bNTDXiTFiU6ee7nNMRTp"
+            },
+            {
+              "name": "SANA-SOL",
+              "damm_pool": "4ekV3ysaEHkqxCerLTEncRYbaxNEsaD8t8Pcg9aGJDst"
+            },
+            {
+              "name": "THIRSTCOIN-SOL",
+              "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
+            },
+            {
+              "name": "PAIRX-SOL",
+              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
+            },
+            {
+              "name": "SpaceX-SOL",
+              "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            }
+          ]
+        },
+        {
+          "value": "bags.fun",
+          "n": 280,
+          "alive": 157,
+          "alive_pct": 56,
+          "alive_ci95": [
+            50,
+            62
+          ],
+          "median_holders": 120,
+          "median_mcap_usd": 2059,
+          "partners": 262,
+          "examples": [
+            {
+              "name": "BTH-SOL",
+              "damm_pool": "2hwtBH85qP43oGjWTtkdjYvDbM9WvrZSj72nESPHcfgU"
+            },
+            {
+              "name": "STEALTH-SOL",
+              "damm_pool": "FoNHei2AS49rsBwyFaeYCtEFqg2XaKrTWBpze4FRSRbb"
+            },
+            {
+              "name": "FINNBAGS-SOL",
+              "damm_pool": "25973V4vZEBhkaTJgrkC65QV7L3J5hwtyAvhQSQM3v1k"
+            },
+            {
+              "name": "FINNBAGS-SOL",
+              "damm_pool": "8wJYk4oP8cKUkGuMwF8tAbvjCMFnwJpKoqS54LsQFrLz"
+            },
+            {
+              "name": "JAX-SOL",
+              "damm_pool": "EXaAULAox1dcaCaui3AT9kyaCZMgTqpshL2CUD1YNJoE"
+            }
+          ]
+        },
+        {
+          "value": "Believe",
+          "n": 149,
+          "alive": 21,
+          "alive_pct": 14,
+          "alive_ci95": [
+            9,
+            21
+          ],
+          "median_holders": 111,
+          "median_mcap_usd": 7558,
+          "partners": 76,
+          "examples": [
+            {
+              "name": "SAIDAR-SOL",
+              "damm_pool": "14WoYDjDp7Rahk2GYu3BqrZ6bp215vBAuthHPY9nkQXw"
+            },
+            {
+              "name": "A16ZE-SOL",
+              "damm_pool": "4qCE5bC1ZNMr1MDA6GhCvep1g1VdnHgCpmiLDeU4pa3C"
+            },
+            {
+              "name": "FINNA-SOL",
+              "damm_pool": "D7rcRvaqeJuCoo5uBWWSeMvQvu5b2Pae58s7RhGUYuR7"
+            },
+            {
+              "name": "GRIFT-SOL",
+              "damm_pool": "2gt141U6bgUwiF3Dhw9veAVoLt7EcNM8EZ4qzj1uszhg"
+            },
+            {
+              "name": "HYVE-SOL",
+              "damm_pool": "C2KsZcPeXCeEeFBbowvdzmQp464vJRMYc33FBKhNh37Z"
+            }
+          ]
+        },
+        {
+          "value": "jup-studio",
+          "n": 102,
+          "alive": 2,
+          "alive_pct": 2,
+          "alive_ci95": [
+            1,
+            7
+          ],
+          "median_holders": 246,
+          "median_mcap_usd": 3351,
+          "partners": 1,
+          "examples": [
+            {
+              "name": "HAM-SOL",
+              "damm_pool": "B1Ro9WQXEBbfgiAxaokRannsDMH1ptUtv5imxmdDaJFQ"
+            },
+            {
+              "name": "GLIZZY-SOL",
+              "damm_pool": "Asw1bVeg4gLC8xs4cnMK2nNwUAUuEgHNVT78NYvNDoM7"
+            },
+            {
+              "name": "SHATURN-SOL",
+              "damm_pool": "D8h1JdUEFiwK451qU8XNuvBsrqciREqtEsSoQHo6uGjD"
+            },
+            {
+              "name": "milky-SOL",
+              "damm_pool": "CRhRCfie66PqRXnwYoSbZ72D5H2eA2ddAA27jkZPVBmX"
+            }
+          ]
+        },
+        {
+          "value": "printr",
+          "n": 29,
+          "alive": 14,
+          "alive_pct": 48,
+          "alive_ci95": [
+            31,
+            66
+          ],
+          "median_holders": 216,
+          "median_mcap_usd": 3704,
+          "partners": 1,
+          "examples": [
+            {
+              "name": "NOOB-SOL",
+              "damm_pool": "4zfVTQVo7Y1cd1HeMkEYJvh5z6wtpfdTS5ikJpkbzDdY"
+            },
+            {
+              "name": "One-SOL",
+              "damm_pool": "J7LsgFFNu2FwWqeERNcyCQnbNCWArau17F9gDiJUWqhu"
+            },
+            {
+              "name": "RRS-SOL",
+              "damm_pool": "4rG45mqg5YLWQXDiMCKamUvnWuzx1Jk46vsJbS9Txdut"
+            },
+            {
+              "name": "TULIPS-SOL",
+              "damm_pool": "2Y9Yh55iMxug17PZEc5Aah1r9mG2b6xDW4CcU5PD4Jvk"
+            },
+            {
+              "name": "UNIVERSAL-SOL",
+              "damm_pool": "4M5L76WmhTZ99vVtVdkxxuNbXpyrR1y2Xwg61oXaePVM"
+            }
+          ]
+        },
+        {
+          "value": "daos.fun",
+          "n": 28,
+          "alive": 11,
+          "alive_pct": 39,
+          "alive_ci95": [
+            24,
+            58
+          ],
+          "median_holders": 100,
+          "median_mcap_usd": 0,
+          "partners": 1,
+          "examples": [
+            {
+              "name": "JOI-SOL",
+              "damm_pool": "FoFiq6jje5iHx1z7ZzDi4nFMTuMhcvbL7fsDjBb8pQ6W"
+            },
+            {
+              "name": "mAIzuki-SOL",
+              "damm_pool": "Bf7cdKLZPWCuWVVdqkYqTmTkBKLDuUFwzA95deJRXFKY"
+            },
+            {
+              "name": "FUD-SOL",
+              "damm_pool": "8LM3s3ReGNhVmiPZMGKZBdqui2YeLD5hhEeNcazMzXk7"
+            },
+            {
+              "name": "LLM-SOL",
+              "damm_pool": "JDiGPePN6Y9aTCU93SfHXC85zkaHjPQBBAMcrX5hfD2E"
+            },
+            {
+              "name": "QJUMP AI-SOL",
+              "damm_pool": "DjBzmFz7s4k5XX81Pe2YQXnmQBcHCe3PHK9S9C27Tevk"
+            }
+          ]
+        },
+        {
+          "value": "dubdub",
+          "n": 25,
+          "alive": 11,
+          "alive_pct": 44,
+          "alive_ci95": [
+            27,
+            63
+          ],
+          "median_holders": 87,
+          "median_mcap_usd": 3729,
+          "partners": 1,
+          "examples": [
+            {
+              "name": "SPACESHIBA-SOL",
+              "damm_pool": "E6h5wqBjafa6D1WzVuKdw6TRGb6YaEiKqECMFQDxajeb"
+            },
+            {
+              "name": "ASTRONAUT-SOL",
+              "damm_pool": "HnE1ftTM7gswnQj36fdi615w9nejwymNQGjiQ1D3EKHd"
+            },
+            {
+              "name": "GODE-SOL",
+              "damm_pool": "E5gaiXNYkfPX5RnufKX8knVt2WmSNH61Empnuxq5XGSz"
+            },
+            {
+              "name": "BABYVIBE-SOL",
+              "damm_pool": "8bri89DaYC6Rg9AnxSC5KekYdsfd6ggQ2XVnGQua4JZJ"
+            },
+            {
+              "name": "BABYVIBE-SOL",
+              "damm_pool": "9HTTM1n4SpnjKdS2HKMBp9Y5PeDuXGYmwxatKpQRUvBw"
+            }
+          ]
+        },
+        {
+          "value": "revshare",
+          "n": 14,
+          "alive": 5,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "MOONXR-SOL",
+              "damm_pool": "6RgF1QnWvmHTm1ZmHHysHKjzP5CNpbrkKzgftoT2rXpH"
+            },
+            {
+              "name": "IMT-SOL",
+              "damm_pool": "8A6mUnhX4NQ3UBHEC9mg7PJKnCZVK7DD3atcPmHnLVP7"
+            },
+            {
+              "name": "SECURE-SOL",
+              "damm_pool": "2A8YUmRxksw5FdSNTFXTixZzas4tGVJkcfQ46VpShGPY"
+            },
+            {
+              "name": "LIQUIDITY-SOL",
+              "damm_pool": "6wkVUeEor186Q6H31M4dMWLMa7P2QLdAEE9b6xqiv7JK"
+            },
+            {
+              "name": "SPEC-SOL",
+              "damm_pool": "7m5vwar8tzHFkU82YEEGTJTtecC6CkAjVfNe9GMz7G7r"
+            }
+          ]
+        },
+        {
+          "value": "moonshot",
+          "n": 13,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "pumPussy-SOL",
+              "damm_pool": "61E8F1HQxGwTEtBabireYNY6g4shzBrHoboqE2VEra1z"
+            },
+            {
+              "name": "JAMIE-SOL",
+              "damm_pool": "Bsb4bMe7S2r36jc51vACguHVb1mjzphB2HUCgVMqwadT"
+            }
+          ]
+        },
+        {
+          "value": "time.fun",
+          "n": 12,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "ultra-SOL",
+              "damm_pool": "29pzTK5k7wmfqcaWZUwwiYP5A1LWQsCFFHZZevbrRjwm"
+            },
+            {
+              "name": "Pentoshi-SOL",
+              "damm_pool": "8kJLZgwjsuB5Ly3vA7LyYKySK1zt25KQC5oYDgqaafAk"
+            }
+          ]
+        },
+        {
+          "value": "cyreneai",
+          "n": 12,
+          "alive": 4,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "AIDP-SOL",
+              "damm_pool": "HUUVGK1m8HisBL2sYETKKoVYoHeNfoYgD5kYgMmGKBni"
+            },
+            {
+              "name": "CF-SOL",
+              "damm_pool": "73L7nRZiJRnKhjNvHz7buKejEtPX5DBtzhjj1dat8C5e"
+            },
+            {
+              "name": "$SGQ-SOL",
+              "damm_pool": "CrJ9qcvo4ZRPvYpU9mtYq8jQxwddMLmDZvWNhX7EFLvZ"
+            },
+            {
+              "name": "KODE-SOL",
+              "damm_pool": "2LXcQ1gHVLUQd6dN9ZVpQ4DNrBYuKSP3ibcUmufJgkEc"
+            },
+            {
+              "name": "TPAYX-SOL",
+              "damm_pool": "HbebhWNKdGGn96G5RY3sVWQTA2YEfjxcjtr3Vnxju2H"
+            }
+          ]
+        },
+        {
+          "value": "eitherway",
+          "n": 10,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "SPARQ-SOL",
+              "damm_pool": "78qtiES9B1CHcNk7yZy3ij2tp3JYm8LGaZRJviUzzixn"
+            },
+            {
+              "name": "SPARQ-SOL",
+              "damm_pool": "EtWmxBVmQughsrhBtumygQ4YKFsm6dr74NXGqpeEdMpk"
+            }
+          ]
+        },
+        {
+          "value": "trends.fun",
+          "n": 10,
+          "alive": 6,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "trend is good-SOL",
+              "damm_pool": "4XH4fhxYAbkmHaGWfWixFxRh9h4p4uE1RMy6YywxnKZX"
+            },
+            {
+              "name": "索拉拉-SOL",
+              "damm_pool": "79Qaq5b1JfC8bFuXkAvXTR67fRPmMjMVNkEA3bb8bLzi"
+            },
+            {
+              "name": "韭菜眼镜-SOL",
+              "damm_pool": "9twY87c3SM1F91VNvQVa8SUFfBvTKp7LPpLKb5gHTVqF"
+            },
+            {
+              "name": "索拉拉-SOL",
+              "damm_pool": "8oj1usMMSEqXNWifBAuzU2Hp6EsGjia8VmdZZkhfohoZ"
+            },
+            {
+              "name": "索拉拉-SOL",
+              "damm_pool": "46yLRwUuobdfqcevucwoqxJS1n3x12TPFa7e96toFnwG"
+            }
+          ]
+        },
+        {
+          "value": "forge",
+          "n": 9,
+          "alive": 3,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "Forgie-SOL",
+              "damm_pool": "8fVWXjPdnQXdtvgvrvkpuJVg3Q4uxxMS3hJWkRNsUngc"
+            },
+            {
+              "name": "BAGS-SOL",
+              "damm_pool": "5zycAhUvZu6M24ULN9NWYbtF4sbNqTg9cyc39NMxPsg2"
+            },
+            {
+              "name": "PRO-SOL",
+              "damm_pool": "HTQWhnH2ctMX8WJncaZAjahc4xAtjqBGmno2hvsKmGdV"
+            },
+            {
+              "name": "BABYK-SOL",
+              "damm_pool": "4daAWngDsgmKoznrEz5g43T8F9iwxPjjfbDYk1MRGMg1"
+            },
+            {
+              "name": "ONE-SOL",
+              "damm_pool": "B8MHdRMQtAq8KEmekLKhBrkavyEVG8PsVT5NdS5q5CFG"
+            }
+          ]
+        },
+        {
+          "value": "print.fun",
+          "n": 8,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "股票-SOL",
+              "damm_pool": "5TVrahQhhLZY52gQDRmrKoweuJAzrnHUiceVw2qvGmrR"
+            },
+            {
+              "name": "Rusd1-SOL",
+              "damm_pool": "49wb9E6chcbZgVYJUxhHTXpQZbS21sWWrsVcXXsCqCWJ"
+            },
+            {
+              "name": "SDX-SOL",
+              "damm_pool": "3X6PXPM3CDzRLxjNkfwMhteDN2X8pJ45npSmwV3fzLvC"
+            }
+          ]
+        },
+        {
+          "value": "easya-kickstart",
+          "n": 7,
+          "alive": 4,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "WEB3AUTO-SOL",
+              "damm_pool": "6SWN3TBbjzRuEjvfw637QsvTZfuieiwqyRvDCmgYmk9n"
+            },
+            {
+              "name": "BEANOMIA-SOL",
+              "damm_pool": "8dKoBsC5Bvx6at5R3C5D5mMkzb5bS9f9QfMj5WNL4fSR"
+            },
+            {
+              "name": "ENTROS-SOL",
+              "damm_pool": "BumjVTzPmeJn9GqyxuubYEsDmPA3vko4xaRSBuHj7diK"
+            },
+            {
+              "name": "BEANOMIA-SOL",
+              "damm_pool": "Htm4zavEp7Yp7xBDH1C5WMsXs6Ljprc7LU7ws8PeJkJz"
+            },
+            {
+              "name": "MTF-SOL",
+              "damm_pool": "3jaj3ahsTMC12j11kgYgQXquqwSsxhDs77BjoAajdBVz"
+            }
+          ]
+        },
+        {
+          "value": "collaterize",
+          "n": 6,
+          "alive": 2,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "KABUT-SOL",
+              "damm_pool": "2v43RXpkbhbtWdmVPKNQy7rNuLqUhz2D5ZrqDqdBKKNY"
+            },
+            {
+              "name": "CRETF-SOL",
+              "damm_pool": "CENtKrx6hXRNjRxHSsF1BKs7VGAjdAQueqs4DW7kXU6L"
+            },
+            {
+              "name": "OREX-SOL",
+              "damm_pool": "HcV3LUvyc2cWJt5Zdc9iALecehSPcZVnZXxjude5z2oX"
+            },
+            {
+              "name": "KABUT-SOL",
+              "damm_pool": "FGbH1eNESRKSnW5QCfNhq4rNkdDNZyNdPn2WCLhvtBG2"
+            }
+          ]
+        },
+        {
+          "value": "orynth",
+          "n": 6,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "JPYCI-SOL",
+              "damm_pool": "7iBgr5praqQZ14dSQoewoh6mR7SjLDj88VA5JAaey8nu"
+            },
+            {
+              "name": "PIE-SOL",
+              "damm_pool": "a3gRGdVkq7DDsPq6RoSfxsK9ik4HGq4eKJA5Nuo1NfW"
+            }
+          ]
+        },
+        {
+          "value": "slerfpad",
+          "n": 5,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "Slerf-SOL",
+              "damm_pool": "7TtLFYSNUedsSZRmVBoN4z54i4Z5uiz2Cud6tdmpw2K9"
+            },
+            {
+              "name": "FUCK-SOL",
+              "damm_pool": "Eigiu8RRmqzTEf4mKhQiBzpSs6zZp5f1cFPrWRDAL3kv"
+            }
+          ]
+        },
+        {
+          "value": "candle",
+          "n": 4,
+          "alive": 3,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "CNDZLL-SOL",
+              "damm_pool": "GYCdhzRp5u2SzUgYK3thtRpHjnkAf2C9yz77ZG2cTjc1"
+            },
+            {
+              "name": "MEME1-SOL",
+              "damm_pool": "8umSDyCuWh4pNWUTXgnvEzkHp9RJfcvWtT2AhqoStxgr"
+            },
+            {
+              "name": "LOUD-SOL",
+              "damm_pool": "CYa1aa1Afzg4CGJoM1zMG54Z1iBeG9BSgcYKaiASDx3e"
+            },
+            {
+              "name": "CNDZLL-SOL",
+              "damm_pool": "ENN98GEuuV7j5NcSEjCS1ohmZ6dJ3TF9dDNkh5t6RarR"
+            }
+          ]
+        },
+        {
+          "value": "zcombinator",
+          "n": 3,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "ZC-SOL",
+              "damm_pool": "CCZdbVvDqPN8DmMLVELfnt9G1Q9pQNt3bTGifSpUY9Ad"
+            },
+            {
+              "name": "SP-SOL",
+              "damm_pool": "2axJed85phJuHM6DyHny4XksUeS62ZbwDUPisAMjS2yv"
+            },
+            {
+              "name": "oogway-SOL",
+              "damm_pool": "G3cgA9UeUmmX3ZPuhaS19bnhVmp3oY9USoCWQQZvuKdF"
+            }
+          ]
+        },
+        {
+          "value": "bunt.fun",
+          "n": 3,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "Blunt-SOL",
+              "damm_pool": "EffkgYMc5eTFU8YNXYWBKLb7FXgF3L79yLGZUZprBaWS"
+            },
+            {
+              "name": "1k-SOL",
+              "damm_pool": "FmnAjRMytWDedvW7pF1uuWPQ6BzVK8VHAj3yYzgGkRrW"
+            }
+          ]
+        },
+        {
+          "value": "sendshot",
+          "n": 3,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "SAVEASS-SOL",
+              "damm_pool": "F3ByzCzuc8vjHmv5LpLbordodTamdnnfUj7ftz9A3LdB"
+            },
+            {
+              "name": "VIBEY-SOL",
+              "damm_pool": "94WbRFyiVNCNpovJzGQNhkHAHwuZRquJ5t8y7FWXqpm1"
+            },
+            {
+              "name": "MIMI-SOL",
+              "damm_pool": "D7CvJoYJNk45QuJGEkxMmYz6Dxnpp4ZXVgo1Byyokkoe"
+            }
+          ]
+        },
+        {
+          "value": "swarms.world",
+          "n": 3,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "MERGE-SOL",
+              "damm_pool": "qNjWdu3nfjqSBf4piv4g6htKzDCMH7LCMpmthgJET8s"
+            },
+            {
+              "name": "CLAWSWARM-SOL",
+              "damm_pool": "6dFWysrg5cdmxS2Nuj3EFBPTVMbagw46pKF931WMz6LL"
+            },
+            {
+              "name": "WARCLAUDE-SOL",
+              "damm_pool": "CsBz3M5ginu6M49znfG4J1FxKti1YuarfNBbXHJsodYc"
+            }
+          ]
+        },
+        {
+          "value": "cooking.city",
+          "n": 3,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "GM-SOL",
+              "damm_pool": "8C9jHud2AvXFYuw9LphGHTQZd5VJUv3fDEudwVwroPwD"
+            },
+            {
+              "name": "COOK-SOL",
+              "damm_pool": "AbAM4qpErVPLH4BcXve6zHJ3avmyJoRJz3K4bKLjm9Li"
+            },
+            {
+              "name": "DBC-SOL",
+              "damm_pool": "EQ2Ry9cKwCBg7v2DNSq3JProV7jhv5T1UWeT5U8tTkA5"
+            }
+          ]
+        },
+        {
+          "value": "audius",
+          "n": 3,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "R3LL-SOL",
+              "damm_pool": "DwxWy6RFPnedT7S11Hmg47JmV1yeX2ofvbTvbZbddP6n"
+            },
+            {
+              "name": "R3LL-SOL",
+              "damm_pool": "ocyqv83rodSbSnSusqdddoCuNXMhk7mtwy8eu3kDjnk"
+            }
+          ]
+        },
+        {
+          "value": "nouns.fun",
+          "n": 2,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "pirate-SOL",
+              "damm_pool": "5WJbJEypNYt3AA7C1tJztTGJ4KijD7f3VyPqXRbVdGyL"
+            },
+            {
+              "name": "pirate-SOL",
+              "damm_pool": "GJ8N7yHRnv9PzJp1LK2MYe85wG9RjvwCrXLrpYmEL9S4"
+            }
+          ]
+        },
+        {
+          "value": "shout",
+          "n": 2,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "UDOG-SOL",
+              "damm_pool": "H8dhZPyMMAKfoa68vwhG8cfXv5he5x5P1U1EsuyBYGeE"
+            },
+            {
+              "name": "Bane-SOL",
+              "damm_pool": "CD2uJh5M5q8ENcEEWkLDr4JuBWr9F3iuoEbVA92f5YxH"
+            }
+          ]
+        },
+        {
+          "value": "forward",
+          "n": 2,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "CrimeWho-SOL",
+              "damm_pool": "7LCHwdsjPxw1wzbREfoe7adPrEW6iN8QPvsMkf2fhikU"
+            },
+            {
+              "name": "BANDS-SOL",
+              "damm_pool": "AYPKKkFmcKStQx3dbJC5hfJBXVSwrk7pBjmsbSpKXfCS"
+            }
+          ]
+        },
+        {
+          "value": "america.fun",
+          "n": 2,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "RIAL-SOL",
+              "damm_pool": "ExzMiUppS6y1H2YSC4vddMxsdLNLKvjqYHcXP7jQjtuz"
+            },
+            {
+              "name": "REVOLUTION -SOL",
+              "damm_pool": "Hr6C5gizwVQRYX9tAZVJLq2kMkUhqYvCJaAdwndZMH6g"
+            }
+          ]
+        },
+        {
+          "value": "cults.fun",
+          "n": 2,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "COLORS-SOL",
+              "damm_pool": "3nVV4JGw9FtrLdC5w9dbep5g4wZPCWbnTX1NDCKr7nvP"
+            },
+            {
+              "name": "CULTS-SOL",
+              "damm_pool": "4DCFVBZf46HUDp8XoxAbbPRq4orrsRd2CzE4CcE8y5Fq"
+            }
+          ]
+        },
+        {
+          "value": "perpspad",
+          "n": 1,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "PERPSPAD-SOL",
+              "damm_pool": "84uf4YpzybB4vm8RsermBFqjGxThAETpyMbp5HvkVRJQ"
+            }
+          ]
+        },
+        {
+          "value": "purps",
+          "n": 1,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "PURPS-SOL",
+              "damm_pool": "FTG82ngDDGxTgDLjqTUBo5GCvuZQJTj8jrAHUGhH9H4X"
+            }
+          ]
+        },
+        {
+          "value": "soar",
+          "n": 1,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "MIXOOR-SOL",
+              "damm_pool": "F78wXBtKsrX8rSToiDoUkZzALjqDMnEM36DHceqz4Z1f"
+            }
+          ]
+        },
+        {
+          "value": "dealr.fun",
+          "n": 1,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "DEALR-SOL",
+              "damm_pool": "uqJoFDkoGiL4ZhYACYaUaRZHZgJzAXtzkhkC3giHUMN"
+            }
+          ]
+        },
+        {
+          "value": "play.fun",
+          "n": 1,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "TAXES-SOL",
+              "damm_pool": "BMgmyBuQMdWEPEgXqZZS9K1wDpr7aiUqe6yLtxk9tW8v"
+            }
+          ]
+        },
+        {
+          "value": "migrate.fun",
+          "n": 1,
+          "alive": 1,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "HOR-SOL",
+              "damm_pool": "BJAQ2ZhLMgHYApoVfFaZcwDJYmKr6XcuMGLTYYtCTC63"
+            }
+          ]
+        },
+        {
+          "value": "Dialect",
+          "n": 1,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "DUCKY-SOL",
+              "damm_pool": "71xkxsgrgZi71wnc1xBJ8ekc3g7QVRbyeNqpZNDs9ubx"
+            }
+          ]
+        },
+        {
+          "value": "here.fun",
+          "n": 1,
+          "alive": 0,
+          "too_few": true,
+          "examples": [
+            {
+              "name": "BANG-SOL",
+              "damm_pool": "4gD4gpYy1dgKgWvrkAcykUTKBepXt2VoMsdxWr651RSr"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "Graduation threshold",
+      "scope": "within met-dbc",
+      "groups": [
+        {
+          "value": "60–100 SOL",
+          "n": 157,
+          "alive": 20,
+          "alive_pct": 13,
+          "alive_ci95": [
+            8,
+            19
+          ],
+          "median_holders": 113,
+          "median_mcap_usd": 1,
+          "partners": 103,
+          "examples": [
+            {
+              "name": "THIRSTCOIN-SOL",
+              "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
+            },
+            {
+              "name": "D2Y-SOL",
+              "damm_pool": "BnThfrccLgkmXmPwLm6Qh3vivaRuL2uqSsHLQgRhD9GF"
+            },
+            {
+              "name": "COIL-SOL",
+              "damm_pool": "Chihmeu2dDSCE55aKJKMfNBJzTxy7LXuwrnzN4iUbFk4"
+            },
+            {
+              "name": "PAIRX-SOL",
+              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
+            },
+            {
+              "name": "SpaceX-SOL",
+              "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            }
+          ]
+        },
+        {
+          "value": "<20 SOL",
+          "n": 101,
+          "alive": 0,
+          "alive_pct": 0,
+          "alive_ci95": [
+            0,
+            4
+          ],
+          "median_holders": 149,
+          "median_mcap_usd": 1,
+          "partners": 34,
+          "examples": [
+            {
+              "name": "XPD-SOL",
+              "damm_pool": "ERxCq2TKricQtE5iT5NPVagMHX4BL3AijKBEbAc8eVVz"
+            },
+            {
+              "name": "braindead-SOL",
+              "damm_pool": "J2yin8aMTiDxaas4eSwuzgwgt2g6ik4ZRWULsTDsK2pa"
+            }
+          ]
+        },
+        {
+          "value": "≥100 SOL",
+          "n": 78,
+          "alive": 14,
+          "alive_pct": 18,
+          "alive_ci95": [
+            11,
+            28
+          ],
+          "median_holders": 205,
+          "median_mcap_usd": 4890,
+          "partners": 42,
+          "examples": [
+            {
+              "name": "MODRIC-SOL",
+              "damm_pool": "4jwzNcz5gkXW9gAQz89GE4q6bNTDXiTFiU6ee7nNMRTp"
+            },
+            {
+              "name": "SANA-SOL",
+              "damm_pool": "4ekV3ysaEHkqxCerLTEncRYbaxNEsaD8t8Pcg9aGJDst"
+            },
+            {
+              "name": "BAGR-SOL",
+              "damm_pool": "94bDLSB85vSbe9sCkZXEpAhBGJ62fsvLtxYaT4cCp3iH"
+            },
+            {
+              "name": "Narwhal-SOL",
+              "damm_pool": "2vMRz2otqwbNLjhML7WvKkducJRP7zxuHYkVnUcqutuA"
+            },
+            {
+              "name": "PNR-SOL",
+              "damm_pool": "3BfHWFMRX7J21D6SbEXXEy5DyxecSKCxAufpt2arGTsP"
+            }
+          ]
+        },
+        {
+          "value": "20–60 SOL",
+          "n": 64,
+          "alive": 3,
+          "alive_pct": 5,
+          "alive_ci95": [
+            2,
+            13
+          ],
+          "median_holders": 158,
+          "median_mcap_usd": 1,
+          "partners": 30,
+          "examples": [
+            {
+              "name": "KNEWIT-SOL",
+              "damm_pool": "89n5Jdso93YAAMAh67ikaP6MVBPKRwWmWMKQmDZmMH4S"
+            },
+            {
+              "name": "PARTY-SOL",
+              "damm_pool": "8n8dbPxwAcd3s1GrSDf2AMigU5pp7Zn8cc2XPTzgYnKM"
+            },
+            {
+              "name": "PSTRAT-SOL",
+              "damm_pool": "6P1e9yRJXKBqjbKxYYERn4Hj4mNV4pimV1RBLySrS4zM"
+            },
+            {
+              "name": "Tesla AI-SOL",
+              "damm_pool": "5ju7Qedi8fLyF1XU5jFTgKeujwPiUkieJb793pqry61z"
+            },
+            {
+              "name": "YZY-SOL",
+              "damm_pool": "EhwcbKAadLMxMdjnRBYk9cxAeGrZmr8zhhA5GQMCcGSQ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "Starting fee",
+      "scope": "within met-dbc",
+      "groups": [
+        {
+          "value": "≤0.25%",
+          "n": 220,
+          "alive": 2,
+          "alive_pct": 1,
+          "alive_ci95": [
+            0,
+            3
+          ],
+          "median_holders": 154,
+          "median_mcap_usd": 1,
+          "partners": 62,
+          "examples": [
+            {
+              "name": "COIL-SOL",
+              "damm_pool": "Chihmeu2dDSCE55aKJKMfNBJzTxy7LXuwrnzN4iUbFk4"
+            },
+            {
+              "name": "JUPCAT-SOL",
+              "damm_pool": "49myxGD5Sm9fz4W7gmLUMVvnRAzhRey59RJ8EXKZy9Bu"
+            },
+            {
+              "name": "SpaceX-SOL",
+              "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            },
+            {
+              "name": "Tesla AI-SOL",
+              "damm_pool": "36J77VbUeW5Qg5f5wdUCXfbENEbTm4LVwdUmLH1bxQDz"
+            }
+          ]
+        },
+        {
+          "value": ">1%",
+          "n": 126,
+          "alive": 29,
+          "alive_pct": 23,
+          "alive_ci95": [
+            17,
+            31
+          ],
+          "median_holders": 111,
+          "median_mcap_usd": 2512,
+          "partners": 90,
+          "examples": [
+            {
+              "name": "MODRIC-SOL",
+              "damm_pool": "4jwzNcz5gkXW9gAQz89GE4q6bNTDXiTFiU6ee7nNMRTp"
+            },
+            {
+              "name": "SANA-SOL",
+              "damm_pool": "4ekV3ysaEHkqxCerLTEncRYbaxNEsaD8t8Pcg9aGJDst"
+            },
+            {
+              "name": "D2Y-SOL",
+              "damm_pool": "BnThfrccLgkmXmPwLm6Qh3vivaRuL2uqSsHLQgRhD9GF"
+            },
+            {
+              "name": "PAIRX-SOL",
+              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
+            },
+            {
+              "name": "ROCKET-SOL",
+              "damm_pool": "BZwpkmJoYMTU2zb5Tfr2654dGrfz7eFnjWaMyZzJLyyg"
+            }
+          ]
+        },
+        {
+          "value": "0.25–1%",
+          "n": 54,
+          "alive": 6,
+          "alive_pct": 11,
+          "alive_ci95": [
+            5,
+            22
+          ],
+          "median_holders": 143,
+          "median_mcap_usd": 713,
+          "partners": 39,
+          "examples": [
+            {
+              "name": "THIRSTCOIN-SOL",
+              "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
+            },
+            {
+              "name": "xymint-SOL",
+              "damm_pool": "DA5cUVCXmejXa6dHjBAJC7NGyhLMi9BzxvQw94MR8enz"
+            },
+            {
+              "name": "GRU-SOL",
+              "damm_pool": "GXKVArsSfr8ZR7bwac3Y1qJmuwhp7VtAKGCDiDnLgLnj"
+            },
+            {
+              "name": "GMET-SOL",
+              "damm_pool": "7BQzzWQeKxu5gPdJz3hZiJYjCnSLsnN533ukm64rzerf"
+            },
+            {
+              "name": "ufun-SOL",
+              "damm_pool": "6z1nr6cbCnumV36rn3EjeheKZw7bwySkTeghbbJ88gEW"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "Fee decay",
+      "scope": "within met-dbc",
+      "groups": [
+        {
+          "value": "flat",
+          "n": 337,
+          "alive": 26,
+          "alive_pct": 8,
+          "alive_ci95": [
+            5,
+            11
+          ],
+          "median_holders": 140,
+          "median_mcap_usd": 1,
+          "partners": 153,
+          "examples": [
+            {
+              "name": "THIRSTCOIN-SOL",
+              "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
+            },
+            {
+              "name": "D2Y-SOL",
+              "damm_pool": "BnThfrccLgkmXmPwLm6Qh3vivaRuL2uqSsHLQgRhD9GF"
+            },
+            {
+              "name": "COIL-SOL",
+              "damm_pool": "Chihmeu2dDSCE55aKJKMfNBJzTxy7LXuwrnzN4iUbFk4"
+            },
+            {
+              "name": "PAIRX-SOL",
+              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
+            },
+            {
+              "name": "SpaceX-SOL",
+              "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            }
+          ]
+        },
+        {
+          "value": "decaying",
+          "n": 63,
+          "alive": 11,
+          "alive_pct": 17,
+          "alive_ci95": [
+            10,
+            29
+          ],
+          "median_holders": 270,
+          "median_mcap_usd": 4789,
+          "partners": 39,
+          "examples": [
+            {
+              "name": "MODRIC-SOL",
+              "damm_pool": "4jwzNcz5gkXW9gAQz89GE4q6bNTDXiTFiU6ee7nNMRTp"
+            },
+            {
+              "name": "SANA-SOL",
+              "damm_pool": "4ekV3ysaEHkqxCerLTEncRYbaxNEsaD8t8Pcg9aGJDst"
+            },
+            {
+              "name": "DeClaws-SOL",
+              "damm_pool": "DWeeSzFNEC54q4aaNbAU6kwwR4Ye9254ptVcp11CkAr5"
+            },
+            {
+              "name": "ROCKET-SOL",
+              "damm_pool": "BZwpkmJoYMTU2zb5Tfr2654dGrfz7eFnjWaMyZzJLyyg"
+            },
+            {
+              "name": "TVT-SOL",
+              "damm_pool": "DtpJq7xBmgk9wDBH1Gn38d2um1o7G3tBz75EBsCyJ3MB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "family": "Locked LP after graduation",
+      "scope": "within met-dbc",
+      "groups": [
+        {
+          "value": "some locked",
+          "n": 337,
+          "alive": 36,
+          "alive_pct": 11,
+          "alive_ci95": [
+            8,
+            14
+          ],
+          "median_holders": 156,
+          "median_mcap_usd": 1,
+          "partners": 141,
+          "examples": [
+            {
+              "name": "MODRIC-SOL",
+              "damm_pool": "4jwzNcz5gkXW9gAQz89GE4q6bNTDXiTFiU6ee7nNMRTp"
+            },
+            {
+              "name": "SANA-SOL",
+              "damm_pool": "4ekV3ysaEHkqxCerLTEncRYbaxNEsaD8t8Pcg9aGJDst"
+            },
+            {
+              "name": "THIRSTCOIN-SOL",
+              "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
+            },
+            {
+              "name": "PAIRX-SOL",
+              "damm_pool": "FZY9ZcSorZRxr2eZTg92JEtRXhZVDKgVco5m5DHw9bH5"
+            },
+            {
+              "name": "SpaceX-SOL",
+              "damm_pool": "AdMdRkTmspzmAY5h8GTR2hhtvtdaSoFcoqtYE9r4FB8n"
+            }
+          ]
+        },
+        {
+          "value": "none locked",
+          "n": 63,
+          "alive": 1,
+          "alive_pct": 2,
+          "alive_ci95": [
+            0,
+            8
+          ],
+          "median_holders": 55,
+          "median_mcap_usd": 0,
+          "partners": 48,
+          "examples": [
+            {
+              "name": "SPARKY-SOL",
+              "damm_pool": "7fx4UAs2pEE5F1JM5PVAqG7muDHJLW2FCWpiJBof9nsH"
+            },
+            {
+              "name": "Narwhal-SOL",
+              "damm_pool": "2vMRz2otqwbNLjhML7WvKkducJRP7zxuHYkVnUcqutuA"
+            },
+            {
+              "name": "USOH-SOL",
+              "damm_pool": "taTF4KpBESSNxibD2mh6UyfaTpZGDw8MPDnRMdNnBjt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presetEvidence": [
+    {
+      "preset": "steady",
+      "n": 49,
+      "alive": 13,
+      "alive_pct": 27,
+      "alive_ci95": [
+        16,
+        40
+      ],
+      "median_holders": 161,
+      "median_mcap_usd": 2326,
+      "partners": 40,
+      "alive_examples": [
+        {
+          "name": "THIRSTCOIN-SOL",
+          "damm_pool": "38ExDDrVRyrFkF4UPzoWfjHfvSA8iZTdtt7YsGdiNWuB"
+        },
+        {
+          "name": "D2Y-SOL",
+          "damm_pool": "BnThfrccLgkmXmPwLm6Qh3vivaRuL2uqSsHLQgRhD9GF"
+        },
+        {
+          "name": "DIVVY-SOL",
+          "damm_pool": "6iAUbhcws6PZHyJ5LaqxkdiHycnMhR5j39YXGXKMUJ6o"
+        },
+        {
+          "name": "SFM-SOL",
+          "damm_pool": "8vMUB97tuqfU64inaM4ZQkzt2CQTo1JF3D71N3ghtJRe"
+        },
+        {
+          "name": "xymint-SOL",
+          "damm_pool": "DA5cUVCXmejXa6dHjBAJC7NGyhLMi9BzxvQw94MR8enz"
+        },
+        {
+          "name": "HATCH-SOL",
+          "damm_pool": "4SixSsjPtniee1EQoPwhEX61ZqiuMtLEzXkaqtqFpnjs"
+        },
+        {
+          "name": "CODE-SOL",
+          "damm_pool": "Fy6ewez1BKbEqaRiTTg5s3RzjmexaZnNaymzPqH1orSy"
+        },
+        {
+          "name": "CNDLMB-SOL",
+          "damm_pool": "6z3CJuYE9F1AWVtWjUguPWQpwFXKZaC72wW5NZ3McU2b"
+        },
+        {
+          "name": "PINE-SOL",
+          "damm_pool": "4BWH6twdtMh31mRuUCP95v3hf7z4HXyFUcdjoGFjrGXT"
+        },
+        {
+          "name": "ZUL-SOL",
+          "damm_pool": "W5AHNgyzCHWkJRszKXm3m5g4MPzyusCZVmtzX6T22VJ"
+        },
+        {
+          "name": "GS-SOL",
+          "damm_pool": "AFQ1h588PgRBPwxYHLq1EF8Hi9SsVZ1XaWQfjhwshxYg"
+        },
+        {
+          "name": "LARP-SOL",
+          "damm_pool": "FCoKopN9EVjLREWMsUgeDP1viQJbcKmaRMifc59VYqSZ"
+        },
+        {
+          "name": "PEPPE-SOL",
+          "damm_pool": "HaHAVMzHTZeUS4DGJbDKhrjcdwjSM8viVDaS7QH3nQwp"
+        }
+      ]
+    },
+    {
+      "preset": "anti-sniper",
+      "n": 7,
+      "alive": 1,
+      "too_few": true,
+      "alive_examples": [
+        {
+          "name": "TRIO-SOL",
+          "damm_pool": "5LgKbneyJHv3FDZKdU6aTFYeSFSnqoEUMzJuXuxkSzpR"
+        }
+      ]
+    }
+  ],
+  "warningEvidence": [
+    {
+      "id": "low-fee",
+      "text": "Starting fee is 0.25% or lower",
+      "n": 220,
+      "alive": 2,
+      "alive_pct": 1,
+      "alive_ci95": [
+        0,
+        3
+      ],
+      "median_holders": 154,
+      "median_mcap_usd": 1,
+      "partners": 62
+    },
+    {
+      "id": "low-threshold",
+      "text": "Graduates at under 20 SOL",
+      "n": 101,
+      "alive": 0,
+      "alive_pct": 0,
+      "alive_ci95": [
+        0,
+        4
+      ],
+      "median_holders": 149,
+      "median_mcap_usd": 1,
+      "partners": 34
+    },
+    {
+      "id": "nothing-locked",
+      "text": "No liquidity is permanently locked after graduation",
+      "n": 63,
+      "alive": 1,
+      "alive_pct": 2,
+      "alive_ci95": [
+        0,
+        8
+      ],
+      "median_holders": 55,
+      "median_mcap_usd": 0,
+      "partners": 48
+    },
+    {
+      "id": "avoid",
+      "text": "Any of the warning signs",
+      "n": 252,
+      "alive": 3,
+      "alive_pct": 1,
+      "alive_ci95": [
+        0,
+        3
+      ],
+      "median_holders": 146,
+      "median_mcap_usd": 1,
+      "partners": 84
+    }
+  ]
+}

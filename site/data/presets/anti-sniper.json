@@ -1,0 +1,106 @@
+{
+  "id": "anti-sniper",
+  "title": "Anti-sniper (promising, not confirmed)",
+  "why": "Same graduation and lock as Steady, but the fee starts at 50% and decays to 2% over the first 2 minutes so first-second bots pay heavily. Looked good on the discovery sample; the holdout had too few matching launches to confirm.",
+  "thresholdSol": 85,
+  "startFeeBps": 5000,
+  "endFeeBps": 200,
+  "feePeriods": 120,
+  "feeDurationSec": 120,
+  "feeMode": "exponential",
+  "creatorLockedPct": 50,
+  "partnerLockedPct": 50,
+  "evidence": [
+    "presetEvidence.anti-sniper (data/evidence.json)",
+    "presetEvidence.anti-sniper (data/evidence_holdout.json)"
+  ],
+  "sdk_valid": true,
+  "configParameters": {
+    "poolFees": {
+      "baseFee": {
+        "cliffFeeNumerator": "500000000",
+        "firstFactor": 120,
+        "secondFactor": "1",
+        "thirdFactor": "264",
+        "baseFeeMode": 1
+      },
+      "dynamicFee": {
+        "binStep": 1,
+        "binStepU128": "1844674407370955",
+        "filterPeriod": 10,
+        "decayPeriod": 120,
+        "reductionFactor": 5000,
+        "maxVolatilityAccumulator": 14460000,
+        "variableFeeControl": 1913
+      }
+    },
+    "collectFeeMode": 0,
+    "migrationOption": 1,
+    "activationType": 1,
+    "tokenDecimal": 6,
+    "partnerLiquidityPercentage": 0,
+    "partnerPermanentLockedLiquidityPercentage": 50,
+    "creatorLiquidityPercentage": 0,
+    "creatorPermanentLockedLiquidityPercentage": 50,
+    "migrationQuoteThreshold": "85000000000",
+    "sqrtStartPrice": "95072344172433750",
+    "lockedVesting": {
+      "amountPerPeriod": "0",
+      "cliffDurationFromMigrationTime": "0",
+      "frequency": "0",
+      "numberOfPeriod": "0",
+      "cliffUnlockAmount": "0"
+    },
+    "migrationFeeOption": 0,
+    "tokenSupply": {
+      "preMigrationTokenSupply": "1000000000000000",
+      "postMigrationTokenSupply": "1000000000000000"
+    },
+    "creatorTradingFeePercentage": 0,
+    "tokenUpdateAuthority": 1,
+    "migrationFee": {
+      "feePercentage": 0,
+      "creatorFeePercentage": 0
+    },
+    "migratedPoolFee": {
+      "collectFeeMode": 0,
+      "dynamicFee": 0,
+      "poolFeeBps": 0
+    },
+    "poolCreationFee": "0",
+    "partnerLiquidityVestingInfo": {
+      "vestingPercentage": 0,
+      "bpsPerPeriod": 0,
+      "numberOfPeriods": 0,
+      "cliffDurationFromMigrationTime": 0,
+      "frequency": 0
+    },
+    "creatorLiquidityVestingInfo": {
+      "vestingPercentage": 0,
+      "bpsPerPeriod": 0,
+      "numberOfPeriods": 0,
+      "cliffDurationFromMigrationTime": 0,
+      "frequency": 0
+    },
+    "migratedPoolBaseFeeMode": 0,
+    "migratedPoolMarketCapFeeSchedulerParams": {
+      "numberOfPeriod": 0,
+      "sqrtPriceStepBps": 0,
+      "schedulerExpirationDuration": 0,
+      "reductionFactor": "0"
+    },
+    "enableFirstSwapWithMinFee": false,
+    "compoundingFeeBps": 0,
+    "padding": [],
+    "curve": [
+      {
+        "sqrtPrice": "380289371323205464",
+        "liquidity": "101410499496546307411360885487802"
+      },
+      {
+        "sqrtPrice": "79226673521066979257578248091",
+        "liquidity": "3434578513360188981331421"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "dbc-afterlife",
+  "version": "1.0.0",
+  "description": "Check a Meteora DBC launch's settings against what happened to real launches after graduation.",
+  "scripts": {
+    "test": "tsx --test test/*.test.ts",
+    "analyze": "tsx analyze.ts && tsx analyze.ts holdout && tsx analyze.ts confirm && tsx analyze.ts all",
+    "build": "tsx build-site.ts",
+    "check": "tsx check.ts",
+    "pack-data": "node -e \"const z=require('zlib'),f=require('fs');for(const n of ['launches','launches_holdout','launches_confirm','launches_rpc_sample'])if(f.existsSync('data/'+n+'.jsonl'))f.writeFileSync('data/'+n+'.jsonl.gz',z.gzipSync(f.readFileSync('data/'+n+'.jsonl')))\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@meteora-ag/dynamic-bonding-curve-sdk": "^1.5.13",
+    "@solana/web3.js": "^1.99.0",
+    "bn.js": "^5.2.5",
+    "buffer": "^6.0.3",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.2.0",
+    "@types/node": "^26.6.5"
+  }
+}

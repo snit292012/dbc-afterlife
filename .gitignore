@@ -1,0 +1,21 @@
+node_modules/
+.env
+*.log
+.devnet-keypair.json
+# private working notes (personal details) - never publish
+BRIEF.md
+PLAN.md
+STATUS.md
+STRATEGY.md
+REVIEW.md
+FACTCHECK.md
+SUBMISSION.json
+CHECKLIST.md
+SHIP-REPORT.md
+WRITEUP.md
+# raw API snapshot (~300 MB) and intermediate files; rows are published as data/*.jsonl.gz
+data/pages/
+data/raw/
+data/*.jsonl
+VIDEO-SCRIPT.md
+REVIEW-JUDGE.md

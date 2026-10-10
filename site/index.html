@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DBC Afterlife</title>
+<meta name="description" content="Graduating isn't success. Check whether a Meteora Dynamic Bonding Curve launch's settings survive what comes after - evidence from thousands of real mainnet launches.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233346c8'/%3E%3Cpath d='M5 25 C13 25 17 9 27 7' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='7' r='3' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column (~68ch) with the live checker as the opening "instrument", findings below as a lab report. */
+:root {
+  --bg: #f2f4f1; --surface: #ffffff; --ink: #15201c; --muted: #5b6862; --line: #d5dbd6; --faint: #e8ece8;
+  --accent: #3346c8; --accent-soft: #e3e7fb;
+  --good: #1f7a4d; --good-soft: #e1f2e8; --warn: #a86400; --warn-soft: #f8ecd9; --bad: #b42318; --bad-soft: #fbe4e1;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1513; --surface: #161e1b; --ink: #e6ece8; --muted: #98a49e; --line: #2a3531; --faint: #1d2723;
+  --accent: #8c9bff; --accent-soft: #232a52;
+  --good: #4cc38a; --good-soft: #15301f; --warn: #e5a23a; --warn-soft: #33260f; --bad: #f97066; --bad-soft: #3a1714;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f1513; --surface: #161e1b; --ink: #e6ece8; --muted: #98a49e; --line: #2a3531; --faint: #1d2723;
+  --accent: #8c9bff; --accent-soft: #232a52;
+  --good: #4cc38a; --good-soft: #15301f; --warn: #e5a23a; --warn-soft: #33260f; --bad: #f97066; --bad-soft: #3a1714;
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.12; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.01em; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+code, .mono { font-family: var(--mono); font-size: 0.88em; }
+.eyebrow { font: 500 0.75rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+section { display: grid; gap: 18px; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+
+/* Header */
+header { display: grid; gap: 16px; }
+.brandline { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
+.headline-stat { font-family: var(--display); font-size: 1.25rem; font-weight: 500; max-width: 46ch; }
+.headline-stat strong { color: var(--bad); font-weight: 700; }
+
+/* Checker */
+.instrument { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: grid; gap: 16px; }
+.inrow { display: flex; gap: 8px; flex-wrap: wrap; }
+.inrow input { flex: 1 1 320px; min-width: 0; font: 0.95rem var(--mono); padding: 11px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+button { font: 500 0.95rem var(--body); cursor: pointer; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 10px 14px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+button:disabled { opacity: 0.6; cursor: progress; }
+.chips { display: flex; gap: 6px 8px; flex-wrap: wrap; align-items: center; font-size: 0.85rem; }
+.chips button { padding: 5px 10px; font-size: 0.85rem; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+.tabs button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; padding: 8px 12px; color: var(--muted); }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.manual { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+.manual label { display: grid; gap: 4px; font-size: 0.85rem; color: var(--muted); }
+.manual input, .manual select { font: 0.95rem var(--mono); padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); min-width: 0; }
+.status { font-size: 0.9rem; color: var(--muted); min-height: 1.4em; }
+.status.error { color: var(--bad); }
+
+/* Verdict */
+.verdict { border-left: 4px solid var(--line); padding: 4px 0 4px 16px; display: grid; gap: 12px; }
+.verdict[data-level="red"] { border-color: var(--bad); }
+.verdict[data-level="green"] { border-color: var(--good); }
+.verdict[data-level="amber"] { border-color: var(--warn); }
+.pill { display: inline-flex; align-items: center; gap: 6px; font: 600 0.75rem/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 9px; border-radius: 999px; width: fit-content; }
+.pill[data-level="red"] { background: var(--bad-soft); color: var(--bad); }
+.pill[data-level="green"] { background: var(--good-soft); color: var(--good); }
+.pill[data-level="amber"], .pill[data-level="unknown"] { background: var(--warn-soft); color: var(--warn); }
+.verdict-head { font-family: var(--display); font-size: 1.35rem; font-weight: 500; line-height: 1.3; }
+.who { font: 0.82rem var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.settings { display: flex; flex-wrap: wrap; gap: 6px; }
+.settings span { font: 0.82rem var(--mono); background: var(--faint); border-radius: 4px; padding: 3px 8px; }
+.warnlist { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.warnlist li { display: flex; gap: 8px; align-items: baseline; }
+.warnlist li::before { content: "!"; font: 700 0.8rem var(--mono); color: var(--surface); background: var(--bad); border-radius: 50%; width: 1.25rem; height: 1.25rem; display: inline-grid; place-items: center; flex: none; }
+
+/* Bar charts (single series: % still alive, 95% range whisker, dashed baseline) */
+.chart { display: grid; gap: 6px; }
+.chart-title { font-size: 0.85rem; color: var(--muted); }
+.bar-row { display: grid; grid-template-columns: minmax(96px, 150px) 1fr 92px; gap: 10px; align-items: center; font-size: 0.85rem; }
+.bar-row .lab { overflow-wrap: anywhere; }
+.bar-row .val { font: 0.8rem var(--mono); text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.track { position: relative; height: 18px; }
+.track .grid { position: absolute; inset: 0; background-image: linear-gradient(to right, var(--faint) 1px, transparent 1px); background-size: 25% 100%; }
+.track .bar { position: absolute; left: 0; top: 4px; height: 10px; border-radius: 0 4px 4px 0; background: var(--muted); opacity: 0.45; }
+.track .ci { position: absolute; top: 8px; height: 2px; background: var(--ink); opacity: 0.55; }
+.track .base { position: absolute; top: -2px; bottom: -2px; border-left: 2px dashed var(--ink); opacity: 0.35; }
+.bar-row.hit .bar { background: var(--accent); opacity: 1; }
+.bar-row.hit .lab { font-weight: 600; }
+.bar-row.few .val { font-style: italic; }
+.axis { display: grid; grid-template-columns: minmax(96px, 150px) 1fr 92px; gap: 10px; font: 0.72rem var(--mono); color: var(--muted); }
+.axis .ticks { display: flex; justify-content: space-between; }
+.tip { position: fixed; pointer-events: none; z-index: 10; background: var(--ink); color: var(--bg); font: 0.78rem/1.4 var(--mono); padding: 6px 8px; border-radius: 4px; max-width: 280px; }
+
+/* Findings + tables */
+.finding { display: grid; gap: 10px; padding-top: 18px; border-top: 1px solid var(--line); }
+.big { font-family: var(--display); font-size: clamp(2.4rem, 7vw, 3.6rem); font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px 10px 7px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 0.72rem var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+td.n { text-align: right; font-family: var(--mono); font-size: 0.84rem; white-space: nowrap; }
+th.n { text-align: right; }
+details summary { cursor: pointer; color: var(--muted); font-size: 0.88rem; }
+
+/* Presets */
+.presets { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.preset { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.preset dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; font-size: 0.88rem; }
+.preset dt { color: var(--muted); }
+.preset dd { margin: 0; font-family: var(--mono); font-size: 0.84rem; }
+pre { margin: 0; background: var(--faint); border-radius: 6px; padding: 12px; overflow-x: auto; font: 0.8rem/1.5 var(--mono); }
+footer { font-size: 0.85rem; color: var(--muted); display: grid; gap: 8px; border-top: 1px solid var(--line); padding-top: 18px; }
+@media (prefers-reduced-motion: no-preference) { .track .bar { transition: width 0.4s ease; } }
+@media (max-width: 520px) {
+  .bar-row, .axis { grid-template-columns: 88px 1fr 74px; gap: 6px; }
+  .instrument { padding: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brandline"><span class="eyebrow">Meteora Dynamic Bonding Curve · read-only evidence</span><span class="eyebrow" id="snapshot"></span></div>
+    <h1>DBC Afterlife</h1>
+    <p class="headline-stat" id="headline">Graduating isn't success. Most Meteora launches that complete their bonding curve are dead soon after.</p>
+    <p class="lede">Paste any Meteora DBC token, pool or config address. We read its launch settings from Solana mainnet and compare them with what happened to thousands of real launches after graduation.</p>
+  </header>
+
+  <section aria-labelledby="check-h">
+    <h2 id="check-h" class="eyebrow" style="font-family:var(--mono);font-size:.75rem">Check a launch</h2>
+    <div class="instrument">
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tab-live" aria-selected="true" aria-controls="pane-live">Live address</button>
+        <button role="tab" id="tab-manual" aria-selected="false" aria-controls="pane-manual">Plan a launch</button>
+      </div>
+      <form id="pane-live" class="inrow" role="tabpanel" aria-labelledby="tab-live">
+        <label for="addr" class="eyebrow" style="flex-basis:100%">Token mint, DBC pool or DBC config (Solana mainnet)</label>
+        <input id="addr" name="addr" autocomplete="off" spellcheck="false" placeholder="e.g. 39ahtL8ynzE4amH26J29C93PA5172V3ft9UuUcqQS8fz">
+        <button class="primary" id="go" type="submit">Check settings</button>
+        <div class="chips" style="flex-basis:100%"><span class="muted">Try:</span><span id="examples" class="chips"></span></div>
+      </form>
+      <form id="pane-manual" class="manual" role="tabpanel" aria-labelledby="tab-manual" hidden>
+        <label for="m-thr">Graduation threshold (SOL)<input id="m-thr" type="number" min="0" step="1" value="85"></label>
+        <label for="m-fee">Starting fee (%)<input id="m-fee" type="number" min="0" max="99" step="0.05" value="2"></label>
+        <label for="m-decay">Fee over time<select id="m-decay"><option value="flat">Flat</option><option value="decaying">Decaying (fee scheduler)</option></select></label>
+        <label for="m-lock">Liquidity permanently locked after graduation (%)<input id="m-lock" type="number" min="0" max="100" step="5" value="100"></label>
+      </form>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+      <div id="verdict"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="found-h">
+    <h2 id="found-h">What thousands of graduations show</h2>
+    <p class="muted" id="found-intro"></p>
+    <div id="findings" style="display:grid;gap:32px"></div>
+  </section>
+
+  <section aria-labelledby="presets-h">
+    <h2 id="presets-h">Presets you can launch with</h2>
+    <p>Each preset is built with Meteora's own SDK (<code>buildCurve</code>) and passes the SDK's <code>validateConfigParameters</code>. The numbers under each one count every self-serve launch that matched its rule, alive or dead.</p>
+    <div class="presets" id="presets"></div>
+  </section>
+
+  <section aria-labelledby="method-h">
+    <h2 id="method-h">How this was measured</h2>
+    <div id="method" style="display:grid;gap:12px"></div>
+  </section>
+
+  <footer>
+    <p>Read-only: this site never asks for a wallet and sends no transactions. Historical evidence about launch settings, not financial advice. Associations, not causes.</p>
+    <p>Built for the Meteora DBC track of the Colosseum Crypto World's Fair. <a id="repo-link" href="#">Code and data</a>.</p>
+  </footer>
+</div>
+<div class="tip" id="tip" hidden></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

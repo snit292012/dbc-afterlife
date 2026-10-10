@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-10T00:17:02.112Z",
+  "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+  "results": [
+    {
+      "preset": "steady",
+      "accepted": true,
+      "err": null,
+      "units": 37356,
+      "log": [
+        "Program 11111111111111111111111111111111 success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success"
+      ]
+    },
+    {
+      "preset": "anti-sniper",
+      "accepted": true,
+      "err": null,
+      "units": 39600,
+      "log": [
+        "Program 11111111111111111111111111111111 success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success"
+      ]
+    },
+    {
+      "preset": "control-existing-config",
+      "accepted": false,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 0
+          }
+        ]
+      },
+      "units": 5469,
+      "log": [
+        "Program log: Instruction: CreateConfig",
+        "Program 11111111111111111111111111111111 failed: custom program error: 0x0",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN failed: custom program error: 0x0"
+      ]
+    }
+  ]
+}
